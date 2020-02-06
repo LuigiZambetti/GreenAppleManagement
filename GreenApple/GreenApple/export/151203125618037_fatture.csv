@@ -1,0 +1,2 @@
+NumeroFattura;FatturaNotaCredito;DataFattura;CodiceCliente;ImponibileLordo;ImportoIVA;Spese;Diritti;ImportoTotale;CategoriaServizio;TipoPagamento;Modificata;IBAN
+1116/15;NOTA DI CREDITO;23/11/2015 00:00:00;663;189,6;30;0;0;219,6;2;M;True;
