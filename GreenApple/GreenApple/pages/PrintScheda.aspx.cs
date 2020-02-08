@@ -14,16 +14,14 @@ using System.Text;
 using Microsoft.Reporting.WebForms;
 using System.Globalization;
 
-
 namespace Green.Apple.Management
 {
     public partial class PrintScheda : GREEN_BasePage
     {
-        protected void Page_Load(object sender, System.EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString.Count == 3)
             {
-                
                 //stream.WriteLine(DateTime.Now.ToString("yyyyMMdd hh:mm:ss") + " START");
                 string FORCODICE = Request.QueryString["FORCODICE"].ToString();
                 string ANNO = Request.QueryString["ANNO"].ToString();
@@ -167,7 +165,6 @@ namespace Green.Apple.Management
                     //localReport.DataSources.Add(reportDataSource4);
                       
                     //stream.WriteLine(DateTime.Now.ToString("yyyyMMdd hh:mm:ss") + " ReportDataSource ok");
-                    
 
                     string reportType = "PDF";
                     string mimeType;

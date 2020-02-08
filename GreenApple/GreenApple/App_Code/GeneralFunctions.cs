@@ -47,8 +47,8 @@ namespace Green.Apple.Management
 
                 Ret = sqlQuery + "<BR>" + myError.Message.ToString();
 
-                ((Label)((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
-                ((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
+                ((Label)((HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
+                ((HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
             }
             finally
             {
@@ -91,8 +91,8 @@ namespace Green.Apple.Management
                     //if (System.Diagnostics.Debugger.IsAttached == true)
                     //{ System.Diagnostics.Debugger.Break(); }
                     Ret = sqlQuery + "<BR>" + myError.Message.ToString();
-                    ((Label)((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
-                    ((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
+                    ((Label)((HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
+                    ((HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
 
                 }
                 finally
@@ -120,13 +120,13 @@ namespace Green.Apple.Management
                 Cmd.CommandText = sqlQuery;
                 Cmd.ExecuteReader();
             }
-            catch (System.Exception myError)
+            catch (Exception myError)
             {
                 //if (System.Diagnostics.Debugger.IsAttached == true)
                 //{ System.Diagnostics.Debugger.Break(); }
                 Ret = sqlQuery + "<BR>" + myError.Message.ToString();
-                ((Label)((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
-                ((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
+                ((Label)((HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = Ret;
+                ((HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
 
             }
             finally
@@ -189,7 +189,7 @@ namespace Green.Apple.Management
                 }
                 /*query senza parametri - END */
             }
-            catch (System.Exception myError)
+            catch (Exception myError)
             {
                 //MessageBox.Show(sqlQuery + myError.Message);
                 //if (System.Diagnostics.Debugger.IsAttached == true && !myError.Message.ToUpper().Contains("IDENTITY_INSERT"))
@@ -201,8 +201,8 @@ namespace Green.Apple.Management
                 Ret.Add("ERRORE", myError.Message.ToString());
                 Ret.Add("STACK", myError.StackTrace.ToString()); // Added
 
-                ((Label)((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = myError.Message.ToString();
-                ((System.Web.UI.HtmlControls.HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
+                ((Label)((HtmlGenericControl)page.Master.FindControl("divErroreBox")).FindControl("lblError")).Text = myError.Message.ToString();
+                ((HtmlGenericControl)page.Master.FindControl("divErroreBox")).Visible = true;
 
             }
             finally
@@ -229,7 +229,9 @@ namespace Green.Apple.Management
             strDatePartGG_MM_AAAA += " + '/' + ";
             strDatePartGG_MM_AAAA += " CAST(DATEPART(yyyy,CONVERT(datetime," + DateTimeSel + ",105)) as nvarchar(4)) ";
 
-            if (NoAs == false) strDatePartGG_MM_AAAA += " as " + NameDate + " ";
+            if (NoAs == false) 
+                strDatePartGG_MM_AAAA += " as " + NameDate + " ";
+            
             return (strDatePartGG_MM_AAAA);
         }
 
@@ -247,7 +249,7 @@ namespace Green.Apple.Management
                 object obj = Cmd.ExecuteScalar();
                 Ret = obj.ToString();
             }
-            catch (System.Exception myError)
+            catch (Exception myError)
             {
                 //if (System.Diagnostics.Debugger.IsAttached == true)
                 //{ System.Diagnostics.Debugger.Break(); }
@@ -1451,7 +1453,7 @@ namespace Green.Apple.Management
 
     #region CLASSI BASE PAGE
 
-    public class GREEN_BasePage : System.Web.UI.Page
+    public class GREEN_BasePage : Page
     {
         protected internal void Page_Load(object sender, EventArgs e)
         {
@@ -1463,9 +1465,6 @@ namespace Green.Apple.Management
             clsFunctions.InitThread();
             this.Page.MaintainScrollPositionOnPostBack = true;
         }
-
-
-
     }
 
 

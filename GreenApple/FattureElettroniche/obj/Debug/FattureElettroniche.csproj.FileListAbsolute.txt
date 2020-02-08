@@ -1,0 +1,5 @@
+C:\GreenApple\GreenApple\FattureElettroniche\bin\Debug\FattureElettroniche.dll
+C:\GreenApple\GreenApple\FattureElettroniche\bin\Debug\FattureElettroniche.pdb
+C:\GreenApple\GreenApple\FattureElettroniche\obj\Debug\FattureElettroniche.csprojAssemblyReference.cache
+C:\GreenApple\GreenApple\FattureElettroniche\obj\Debug\FattureElettroniche.dll
+C:\GreenApple\GreenApple\FattureElettroniche\obj\Debug\FattureElettroniche.pdb

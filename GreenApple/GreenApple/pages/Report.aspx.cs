@@ -1,13 +1,5 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 
 namespace Green.Apple.Management
 {
@@ -17,13 +9,13 @@ namespace Green.Apple.Management
         {
             base.Page_Load(sender, e);
 
-            if (((clsSession)Session["GreenApple"]).IDUtente == "0") return;
+            if (((clsSession)Session["GreenApple"]).IDUtente == "0") 
+                return;
 
-            
-            System.Web.UI.Control myUserControl;
+            Control myUserControl;
             string action = "Green_Admin_Report.ascx";
             myUserControl = LoadControl(clsCostanti.RootUserControls + action);
-            this.phContent1.Controls.Add(myUserControl);
+            phContent1.Controls.Add(myUserControl);
         }
     }
 }

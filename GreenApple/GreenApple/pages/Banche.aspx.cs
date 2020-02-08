@@ -17,13 +17,13 @@ namespace Green.Apple.Management
         {
             base.Page_Load(sender, e);
 
-            if (((clsSession)Session["GreenApple"]).IDUtente == "0") return;
+            if (((clsSession)Session["GreenApple"]).IDUtente == "0") 
+                return;
 
-
-            System.Web.UI.Control myUserControl;
+            Control myUserControl;
             string action = "Green_Admin_Banche.ascx";
-            myUserControl = LoadControl(clsCostanti.RootUserControls + action);
-            this.phContent1.Controls.Add(myUserControl);
+            myUserControl = LoadControl(clsCostanti.RootUserControls + action); // "~/customUserControls/"
+            phContent1.Controls.Add(myUserControl);
         }
     }
 }

@@ -18,9 +18,8 @@ namespace Green.Apple.Management
 {
     public partial class Print : GREEN_BasePage
     {
-        protected void Page_Load(object sender, System.EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
-
             try
             {
                 if (Request.QueryString.Count == 5)
@@ -139,7 +138,6 @@ namespace Green.Apple.Management
                                 ReportDataSource reportDataSource3 = new ReportDataSource("CLIENTI_FATTURA_Righe_Clienti", DTCliente);
                                 localReport.DataSources.Add(reportDataSource3);
 
-
                                 string reportType = "PDF";
                                 string mimeType;
                                 string encoding;
@@ -159,7 +157,7 @@ namespace Green.Apple.Management
                                 string[] streams;
                                 byte[] renderedBytes;
 
-                                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("IT-it");
+                                Thread.CurrentThread.CurrentCulture = new CultureInfo("IT-it");
 
                                 renderedBytes = localReport.Render(
                                     reportType,

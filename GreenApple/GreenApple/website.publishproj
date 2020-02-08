@@ -41,5 +41,11 @@ Copyright (C) Microsoft Corporation. All rights reserved.
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FattureElettroniche\FattureElettroniche.csproj">
+      <Project>{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}</Project>
+      <Name>FattureElettroniche</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
 </Project>
