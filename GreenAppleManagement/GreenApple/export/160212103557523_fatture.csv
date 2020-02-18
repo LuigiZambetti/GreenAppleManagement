@@ -1,0 +1,2 @@
+NumeroFattura;FatturaNotaCredito;DataFattura;CodiceCliente;ImponibileLordo;ImportoIVA;Spese;Diritti;ImportoTotale;CategoriaServizio;TipoPagamento;Modificata;IBAN
+21/16;FATTURA;12/02/2016 00:00:00;347;564;124,08;0;0;688,08;1;C;True; IT 88 Z 02008 01768 000020132316

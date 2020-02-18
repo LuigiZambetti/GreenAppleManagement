@@ -1,0 +1,489 @@
+BODY
+{
+    background-color: #BFD8B2;/*#EDEADF;*/
+    padding: 1px;
+    margin: 0px;
+  
+}
+
+.BGHeader
+{
+	background-color: #66CC33;
+}
+
+a
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    color: #0000FF;
+}
+a:link
+{
+    text-decoration: none;
+    color: #0000FF;
+}
+
+a:hover
+{
+    text-decoration:underline;
+    color: #0000FF;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: #0000FF;
+}
+
+A:ACTIVE
+{
+    text-decoration: none;
+    color: #0000FF;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: #0000FF;
+}
+.form_Error_Message SPAN
+{
+    padding: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #EF7171;
+    
+}
+
+
+.box_Menu_Admin
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    padding: 5px;
+    height: 100%;
+    background-color: #BFD8B2; /*#BAE8A3;*/
+    vertical-align: top;
+    width: 100px;
+    border: 1px solid #666666;
+}
+.box_Menu_Item
+{
+    height: 30px;
+    vertical-align: top;    
+    padding-bottom:15px;
+}
+.box_Data_Admin
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    padding: 5px;
+    height: 100%;
+    vertical-align: top;
+    width: 896px;
+    border: 1px solid #666666;
+}
+.Pratica_Content
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    padding: 5px;
+    height: 100%;
+    vertical-align: top;
+    width: 684px;
+    border: 1px solid #666666;
+}
+.form_Title
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #89C56B; /*8EC4E0*/
+    height: 30px;
+    border: 1px solid #666666;
+}
+.form_Title_Search
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 2px;
+
+}
+.form_Title_Grado
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: #8EC4E0; /*#8EC4E0;*/
+    height: 30px;
+    /*border-bottom: 1px solid #666666;*/
+}
+
+
+.form_Title_SottoTitolo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: #89C56B; /*#8EC4E0;*/
+    height: 30px;
+}
+.form_AnagraficaInsert
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: #999999;
+    height: 25px;
+    border: 1px solid #999999;
+}
+.form_text
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    padding: 5px;
+}
+.form_text2
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+}
+.form_textFlat
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    padding-bottom: 2px;
+}
+.form_textarea
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    padding-top: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.form_text2area
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+}
+.form_DropDown
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    width: 100%;
+}
+.Pratica_lbl
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    vertical-align: top;
+}
+.Pratica_lbltxt
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+}
+.Pratica_txt
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+}
+.Selettore_btnClose
+{
+    cursor: pointer;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #339933;
+    border-top: #339933 1px solid;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.Selettore_btnSelect
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #0000cc;
+    cursor: pointer;
+}
+.Selettore_divGriglia
+{
+    border-right: #339933 2px solid;
+    border-top: #339933 2px solid;
+    border-left: #339933 2px solid;
+    border-bottom: #339933 2px solid;
+    background-color: #ffffff;    
+    position: absolute;
+}
+.Selettore_divDatagrid
+{
+    text-align: center;
+    float: right;
+    overflow: auto;
+    vertical-align: middle;
+}
+/*
+    Spalla Sinistra
+*/
+.Pratica_Spalla
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    color: #000000;
+    height: 100%;
+    background-color: #C5D9E3;
+    vertical-align: top;
+    width: 158px;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+}
+.BoxUnselected, BoxUnselected a, BoxUnselected a:link, BoxUnselected a:hover, BoxUnselected a:visited, BoxUnselected A:ACTIVE, BoxUnselected SPAN
+{
+    border-top: 1px solid #666666;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    color: #000000;
+    padding: 3px;
+}
+.BoxSelected, BoxSelected A, BoxSelected A:LINK, BoxSelected A:HOVER, BoxSelected A:VISITED, BoxSelected A:ACTIVE, BoxSelected SPAN
+{
+    background-color: #147AAD;
+    border-top: 1px solid #666666;
+    width: 100%;
+    height: 80px;
+    color: #FFFFFF;
+    padding: 3px;
+}
+.TextUnselected,TextUnselected A, TextUnselected A:LINK, TextUnselected A:HOVER, TextUnselected A:VISITED, TextUnselected A:ACTIVE
+{
+    color: #000000;
+}
+.TextSelected,TextSelected A, TextSelected A:LINK, TextSelected A:HOVER, TextSelected A:VISITED, TextSelected A:ACTIVE
+{
+    color: #FFFFFF;
+}
+.TitoloBox
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px;
+}
+.EtichettaBox
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 3px;
+}
+.LabelBox 
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    
+}
+.DivMessageBox
+{
+	background-color:#BFD8B2;
+    border-right:	#3A741D 2px solid;
+    border-top:		#3A741D 2px solid;
+    border-left:	#3A741D 2px solid;
+    border-bottom:	#3A741D 2px solid;
+    position: absolute;
+}
+.DivMessageBox TABLE
+{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.DivMessageBox2
+{
+	background-color:#BFD8B2;
+    border-right:	#3A741D 2px solid;
+    border-top:		#3A741D 2px solid;
+    border-left:	#3A741D 2px solid;
+    border-bottom:	#3A741D 2px solid;
+    /*position: absolute;*/
+}
+.DivMessageBox2 TABLE
+{
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+}
+.DivMessageBox_Titolo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    vertical-align: top;
+}
+.DivMessageBox_Testo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    vertical-align: top;
+}
+
+.DivErrorBox
+{
+	background-color:#D2827A;
+    border-right:	#9E433A 2px solid;
+    border-top:		#9E433A 2px solid;
+    border-left:	#9E433A 2px solid;
+    border-bottom:	#9E433A 2px solid;
+    position: absolute;
+}
+.DivErrorBox TABLE
+{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.DivErrorBox_Titolo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    vertical-align: top;
+}
+.DivErrorBox_Testo
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    vertical-align: top;
+}
+
+.Form_Insert_DIV
+{
+    border-right: #000000 2px solid;
+    border-top: #666666 2px solid;
+    border-left: #666666 2px solid;
+    border-bottom: #000000 2px solid;
+    background-color: #EEEEEE;
+    position: absolute;
+}
+.Form_Insert_DIV_White
+{
+    border-right: #000000 2px solid;
+    border-top: #666666 2px solid;
+    border-left: #666666 2px solid;
+    border-bottom: #000000 2px solid;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+.Form_Insert_DIV_White TABLE
+{
+    width: 100%;
+    padding: 10px;
+}
+.Form_Insert_DIV TABLE
+{
+    width: 100%;
+    padding: 10px;
+}
+
+
+.Form_Print_DIV
+{
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.Form_Print_DIV TABLE
+{
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+.BoxButtons
+{
+    /*border-right: #446792 2px solid; 	border-top: #446792 2px solid; 	border-left: #446792 2px solid; 	border-bottom: #446792 2px solid;*/
+    /*border-top: 1px solid #666666;*/
+    background-color: #EDEADF;
+    width: 100%;
+    padding: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align:right;
+}
+.Link_Action, .Link_Action A, .Link_Action A:ACTIVE, .Link_Action A:HOVER, .Link_Action A:LINK, .Link_Action A:VISITED
+{
+    /*color: #FFFFFF;*/
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.ButtonOk
+{
+    border-right: #999999 1px solid;
+    border-top: #999999 1px solid;
+    border-left: #999999 1px solid;
+    border-bottom: #999999 1px solid;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background-color: #EDEADF;
+    cursor:pointer;
+}
+
+.RWServizioMOD INPUT
+{
+	width:73px;
+}
+
+.RWServizioMOD SELECT
+{
+	width:100%;
+}

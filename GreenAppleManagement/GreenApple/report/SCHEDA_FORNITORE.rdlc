@@ -1,0 +1,1502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="GREENAPPLEConnectionString">
+      <rd:DataSourceID>920d7276-0326-40dd-9e19-dd71df065a22</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <Height>1.5cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>29b4342c-3f28-4161-a472-825439393882</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="greenapple">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>R0lGODlhHQJPAPcAAGvOOWvOUmvWQmveOWveQmveSnPOSnPWQnPWSnPWUnPeQnPeSnPeUnPnQnPnSntzvXt7vXvGUnvOQnvOSnvOUnvOWnvWQnvWSnvWUnvWWnveQnveSnveUnvnSoRrxoRzvYRzxoTGUoTGa4TOUoTOWoTOY4TWUoTWWoTWY4TeY4xrxozOY4zOa4zOc4zWY4zWa4zWc4zec5RjzpRrxpTGc5TOa5TOc5TWa5TWc5Tec5xazpxjzpyte5y1e5y9e5y9hJzGhJzWhJzehKVS1qVa1qXOjKXehK1K1q1S1q21lK3GlK3OlK3WlK3ehK3nlLVC3rVK3rWMnLWlnLWtlLW1nLXGlL053r1C3r2Upb2lpb2trb21pb3WrcYx58Y558ZjtcZ7tcZ7vcaEtcaMrcaltcattca9rca9tc4x585avc5jxs6Etc6Evc6Mxs6lvc61vdZSxtaExtaMxt5C1t5S1t6Mzuc53udK3udK5+da3udj1udj3u8x5+855+857+9C7+9K3u9S5+9S7/cx7/c57/c59/8A//859///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="CLIENTI_FATTURA_Righe_SchedaFornitore">
+      <Fields>
+        <Field Name="Forcodice">
+          <DataField>Forcodice</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Forprenome">
+          <DataField>Forprenome</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forragsoc">
+          <DataField>Forragsoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forindirizzo">
+          <DataField>Forindirizzo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forlocalita">
+          <DataField>Forlocalita</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forprovincia">
+          <DataField>Forprovincia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForCAP">
+          <DataField>ForCAP</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Forpostaragsoc">
+          <DataField>Forpostaragsoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forpostaind">
+          <DataField>Forpostaind</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forpostaloc">
+          <DataField>Forpostaloc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForpostCAP">
+          <DataField>ForpostCAP</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Fortelef">
+          <DataField>Fortelef</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forfax">
+          <DataField>Forfax</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForIVA">
+          <DataField>ForIVA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForCF">
+          <DataField>ForCF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fordatanascita">
+          <DataField>Fordatanascita</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Forluogonascita">
+          <DataField>Forluogonascita</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forpagamento">
+          <DataField>Forpagamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forbanca">
+          <DataField>Forbanca</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForPiazza">
+          <DataField>ForPiazza</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForpercIVA">
+          <DataField>ForpercIVA</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forpercritenuta">
+          <DataField>Forpercritenuta</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forpercacconto">
+          <DataField>Forpercacconto</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forpercsuacconto">
+          <DataField>Forpercsuacconto</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forperc1">
+          <DataField>Forperc1</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forperc2">
+          <DataField>Forperc2</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forperc3">
+          <DataField>Forperc3</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forperc4">
+          <DataField>Forperc4</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forperc5">
+          <DataField>Forperc5</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Foroperatore">
+          <DataField>Foroperatore</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Forperc6">
+          <DataField>Forperc6</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="Forcat1">
+          <DataField>Forcat1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forcat2">
+          <DataField>Forcat2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forcat3">
+          <DataField>Forcat3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forcat4">
+          <DataField>Forcat4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forcat5">
+          <DataField>Forcat5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forcat6">
+          <DataField>Forcat6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForIBAN">
+          <DataField>ForIBAN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForEsenzioneIvaArt15">
+          <DataField>ForEsenzioneIvaArt15</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ForPctRivPrev">
+          <DataField>ForPctRivPrev</DataField>
+          <rd:TypeName>System.Single</rd:TypeName>
+        </Field>
+        <Field Name="ForPagCodice">
+          <DataField>ForPagCodice</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForNazione">
+          <DataField>ForNazione</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForPostaNazione">
+          <DataField>ForPostaNazione</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForPostaProv">
+          <DataField>ForPostaProv</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForInUso">
+          <DataField>ForInUso</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRcodice">
+          <DataField>SRcodice</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SRoperatore">
+          <DataField>SRoperatore</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SRcliente">
+          <DataField>SRcliente</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SRcategoria">
+          <DataField>SRcategoria</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRtiposervizio">
+          <DataField>SRtiposervizio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRimporto">
+          <DataField>SRimporto</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRimponibile">
+          <DataField>SRimponibile</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRdiritti">
+          <DataField>SRdiritti</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRanticipi">
+          <DataField>SRanticipi</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRtrattenute">
+          <DataField>SRtrattenute</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRfatturacli">
+          <DataField>SRfatturacli</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SRfatturafor">
+          <DataField>SRfatturafor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRdatafatturacli">
+          <DataField>SRdatafatturacli</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SRdatafatturafor">
+          <DataField>SRdatafatturafor</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SRfatturare">
+          <DataField>SRfatturare</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRfatturato">
+          <DataField>SRfatturato</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRnumgiorni">
+          <DataField>SRnumgiorni</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SRnumeroprestazione">
+          <DataField>SRnumeroprestazione</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SRfatclianno">
+          <DataField>SRfatclianno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRanticipige">
+          <DataField>SRanticipige</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRpagato">
+          <DataField>SRpagato</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRdatainizio">
+          <DataField>SRdatainizio</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SRdatafine">
+          <DataField>SRdatafine</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SRimportoLordo">
+          <DataField>SRimportoLordo</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRpctDiritti">
+          <DataField>SRpctDiritti</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpese">
+          <DataField>SRdescSpese</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRspese">
+          <DataField>SRspese</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRspeseGA">
+          <DataField>SRspeseGA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpese1">
+          <DataField>SRdescSpese1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRspese1">
+          <DataField>SRspese1</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRspeseGA1">
+          <DataField>SRspeseGA1</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpese2">
+          <DataField>SRdescSpese2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRspese2">
+          <DataField>SRspese2</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRspeseGA2">
+          <DataField>SRspeseGA2</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRAnnoFatt">
+          <DataField>SRAnnoFatt</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SRMeseFatt">
+          <DataField>SRMeseFatt</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SResenzioneIvaArt15">
+          <DataField>SResenzioneIvaArt15</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRpctRivPrev">
+          <DataField>SRpctRivPrev</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRpctIVA">
+          <DataField>SRpctIVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRpctRitAcc">
+          <DataField>SRpctRitAcc</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRimportoRedazionale">
+          <DataField>SRimportoRedazionale</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRimportoOvertime">
+          <DataField>SRimportoOvertime</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpeseGA">
+          <DataField>SRdescSpeseGA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpeseGA1">
+          <DataField>SRdescSpeseGA1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRdescSpeseGA2">
+          <DataField>SRdescSpeseGA2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SRimportoOvertimeGA">
+          <DataField>SRimportoOvertimeGA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRImportoGA">
+          <DataField>SRImportoGA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="SRFornFatturare">
+          <DataField>SRFornFatturare</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SRFornPagata">
+          <DataField>SRFornPagata</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="cliragsoc">
+          <DataField>cliragsoc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FATTURA">
+          <DataField>FATTURA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATAFATTURA">
+          <DataField>DATAFATTURA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATAINIZIO">
+          <DataField>DATAINIZIO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DATAFINE">
+          <DataField>DATAFINE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SRCompensoAggiunto">
+          <DataField>SRCompensoAggiunto</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TIPO">
+          <DataField>TIPO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CATEGORIA">
+          <DataField>CATEGORIA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DCNumeroCompleto">
+          <DataField>DCNumeroCompleto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DCAnno">
+          <DataField>DCAnno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ForEMAIL">
+          <DataField>ForEMAIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GACalcoloIVA">
+          <DataField>GACalcoloIVA</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="GANote">
+          <DataField>GANote</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Forperc0">
+          <DataField>Forperc0</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>GREENAPPLEConnectionString</DataSourceName>
+        <CommandText>select '' AS DCNumeroCompleto,'' AS DCAnno,Lista_CategoriaServizi.csdescrizione as CATEGORIA,Lista_PrestazioniTipi.descrizione AS TIPO,srdatainizio AS DATAINIZIO, srdatafine AS DATAFINE, '' AS FATTURA,'' AS DATAFATTURA, clienti.cliragsoc, fornitori.*,servizi.* from fornitori
+inner join servizi on servizi.SROperatore=fornitori.forcodice
+inner join Lista_PrestazioniTipi on servizi.SRtiposervizio = Lista_PrestazioniTipi.idtipo
+inner join clienti on servizi.srcliente=clienti.clicodice
+inner join Lista_CategoriaServizi on servizi.SRcategoria=Lista_CategoriaServizi.cscodice</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>CLIENTI_FATTURA_Righe</rd:DataSetName>
+        <rd:TableName>SchedaFornitore</rd:TableName>
+        <rd:TableAdapterName>SchedaFornitoreTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>16.5cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox6">
+        <Top>6cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.72354cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=FormatNumber(Sum(Fields!SRimponibile.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRimportoRedazionale.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRspese.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRspese1.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRspese2.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore"),2)</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Top>6cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>TOTALE :</Value>
+      </Textbox>
+      <Textbox Name="textbox26">
+        <Top>5.25cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=FormatNumber(Sum(Fields!SRspese.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRspese1.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRspese2.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore"),2)</Value>
+      </Textbox>
+      <Textbox Name="textbox28">
+        <Top>5.25cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>Totale Spese :</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Top>4.5cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=FormatNumber(Sum(Fields!SRimponibile.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") + Sum(Fields!SRimportoRedazionale.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore") ,2)</Value>
+      </Textbox>
+      <Textbox Name="textbox23">
+        <Top>4.5cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>Totale Importo :</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Top>1.5cm</Top>
+        <Width>16.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>16pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125cm</Left>
+        <Height>1cm</Height>
+        <Value>=First(Fields!Forragsoc.Value, "CLIENTI_FATTURA_Righe_SchedaFornitore")</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Top>0.25cm</Top>
+        <Width>16.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125cm</Left>
+        <Height>1cm</Height>
+        <Value>SCHEDA RIASSUNTIVA DELLE PRESTAZIONI RELATIVE ALL'OPERATORE</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Top>7cm</Top>
+        <Width>16.125cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>PRESTAZIONE D'OPERA</Value>
+      </Textbox>
+      <Textbox Name="DATAFATTURA">
+        <rd:DefaultName>DATAFATTURA</rd:DefaultName>
+        <Top>3.25cm</Top>
+        <Width>4.5cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!DATAFATTURA.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>3.25cm</Top>
+        <Width>1.25cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>Data:</Value>
+      </Textbox>
+      <Textbox Name="FATTURA">
+        <rd:DefaultName>FATTURA</rd:DefaultName>
+        <Top>3.25cm</Top>
+        <Width>4.75cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.75cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>=First(Fields!FATTURA.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Top>3.25cm</Top>
+        <Width>2.5cm</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.27646cm</Left>
+        <Height>0.63492cm</Height>
+        <Value>FATTURA n.</Value>
+      </Textbox>
+      <Line Name="line4">
+        <Top>4.25cm</Top>
+        <Width>16.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Left>0.125cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Table Name="table1">
+        <DataSetName>CLIENTI_FATTURA_Righe_SchedaFornitore</DataSetName>
+        <Top>7.75cm</Top>
+        <Width>16.25cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DCNumeroCompleto">
+                      <rd:DefaultName>DCNumeroCompleto</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DCNumeroCompleto.Value &amp; "/" &amp; Fields!DCAnno.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DATAINIZIO">
+                      <rd:DefaultName>DATAINIZIO</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DATAINIZIO.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DATAFINE">
+                      <rd:DefaultName>DATAFINE</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DATAFINE.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="TIPO">
+                      <rd:DefaultName>TIPO</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!cliragsoc.Value  &amp; Chr(13) &amp; Chr(10) &amp; Fields!CATEGORIA.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRnumgiorni">
+                      <rd:DefaultName>SRnumgiorni</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!SRnumgiorni.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRimportoRedazionale">
+                      <rd:DefaultName>SRimportoRedazionale</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Fields!SRimponibile.Value + Fields!SRimportoRedazionale.Value,2)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese">
+                      <rd:DefaultName>SRspese</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Fields!SRspese.Value,2) &amp; Chr(13) &amp; Chr(10) &amp; Fields!SRdescSpese.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese1">
+                      <rd:DefaultName>SRspese1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Fields!SRspese1.Value,2) &amp; Chr(13) &amp; Chr(10) &amp; Fields!SRdescSpese2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese2">
+                      <rd:DefaultName>SRspese2</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Dotted</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Fields!SRspese2.Value,2) &amp; Chr(13) &amp; Chr(10) &amp; Fields!SRdescSpese2.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>23</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Ns.Rif.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>22</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Inizio</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>21</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Fine</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox34">
+                      <rd:DefaultName>textbox34</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>20</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Cliente</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>19</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Gg</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>18</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Importo</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Spesa 1</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Spesa 2</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox19">
+                      <rd:DefaultName>textbox19</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Bottom>Black</Bottom>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Bottom>Solid</Bottom>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Bottom>1pt</Bottom>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Spesa 3</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.5cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.75cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.75cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.90476cm</Height>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ColSpan>4</ColSpan>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <Style>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>TOTALI :</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRnumgiorni_1">
+                      <rd:DefaultName>SRnumgiorni_1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Dotted</Top>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!SRnumgiorni.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRimportoRedazionale_1">
+                      <rd:DefaultName>SRimportoRedazionale_1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Dotted</Top>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Sum(Fields!SRimponibile.Value) + Sum(Fields!SRimportoRedazionale.Value),2)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese_1">
+                      <rd:DefaultName>SRspese_1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Dotted</Top>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Sum(Fields!SRspese.Value),2)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese1_1">
+                      <rd:DefaultName>SRspese1_1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Dotted</Top>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Sum(Fields!SRspese1.Value),2)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SRspese2_1">
+                      <rd:DefaultName>SRspese2_1</rd:DefaultName>
+                      <Style>
+                        <BorderColor>
+                          <Top>Black</Top>
+                        </BorderColor>
+                        <BorderStyle>
+                          <Top>Dotted</Top>
+                        </BorderStyle>
+                        <BorderWidth>
+                          <Top>1pt</Top>
+                        </BorderWidth>
+                        <FontFamily>Century Gothic</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=FormatNumber(Sum(Fields!SRspese2.Value),2)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.125cm</Left>
+      </Table>
+    </ReportItems>
+    <Height>10cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox7">
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>2.25cm</Height>
+        <Value>the green apple italia s.r.l
+sede amministrativa : 20129 milano - via gaio, 10 - tel. +39.02.70107806 r.a. fax. +39.02.70005599
+sede legale: 20135 milano - via g.agnesi, 3 - partita iva n.11052530158
+r.e.a. milano 1435617 - reg. impr. n. 340555/8388/05</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.5cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

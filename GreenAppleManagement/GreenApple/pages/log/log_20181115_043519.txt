@@ -1,0 +1,8 @@
+
+20181115 04:35:19 ERROR
+20181115 04:35:19 Message: Connessione chiusa dall'host remoto. Codice di errore 0x800703E3.
+20181115 04:35:19 StackTrace:    in System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   in System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   in System.Web.HttpResponse.Flush(Boolean finalFlush)
+   in System.Web.HttpResponse.Flush()
+   in Green.Apple.Management.Print.Page_Load(Object sender, EventArgs e) in d:\Marco\GreenApple\GreenApple\GreenApple\pages\Print.aspx.cs:riga 178

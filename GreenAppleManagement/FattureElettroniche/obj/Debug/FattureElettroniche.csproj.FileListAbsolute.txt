@@ -1,0 +1,4 @@
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\bin\Debug\FattureElettroniche.dll
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\bin\Debug\FattureElettroniche.pdb
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\obj\Debug\FattureElettroniche.dll
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\obj\Debug\FattureElettroniche.pdb

@@ -1,0 +1,1854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CLIENTI_FATTURA_Righe" targetNamespace="http://tempuri.org/CLIENTI_FATTURA_Righe.xsd" xmlns:mstns="http://tempuri.org/CLIENTI_FATTURA_Righe.xsd" xmlns="http://tempuri.org/CLIENTI_FATTURA_Righe.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="GREENAPPLEConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GREENAPPLEConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.GREENAPPLEConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DocumclientiTableAdapter" GeneratorDataComponentClassName="DocumclientiTableAdapter" Name="Documclienti" UserDataComponentName="DocumclientiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from documclienti left join ModalitaPagamento on documclienti.DCpagam = ModalitaPagamento.Codice </CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DCid" DataSetColumn="DCid" />
+              <Mapping SourceColumn="DCnumeroCompleto" DataSetColumn="DCnumeroCompleto" />
+              <Mapping SourceColumn="DCanno" DataSetColumn="DCanno" />
+              <Mapping SourceColumn="DCtipo" DataSetColumn="DCtipo" />
+              <Mapping SourceColumn="DCdata" DataSetColumn="DCdata" />
+              <Mapping SourceColumn="DCcliente" DataSetColumn="DCcliente" />
+              <Mapping SourceColumn="DCimponibile" DataSetColumn="DCimponibile" />
+              <Mapping SourceColumn="DCspese" DataSetColumn="DCspese" />
+              <Mapping SourceColumn="DCdiritti" DataSetColumn="DCdiritti" />
+              <Mapping SourceColumn="DCIVA" DataSetColumn="DCIVA" />
+              <Mapping SourceColumn="DCtotale" DataSetColumn="DCtotale" />
+              <Mapping SourceColumn="DCdescfat" DataSetColumn="DCdescfat" />
+              <Mapping SourceColumn="DCdescspese" DataSetColumn="DCdescspese" />
+              <Mapping SourceColumn="DCdatapag1" DataSetColumn="DCdatapag1" />
+              <Mapping SourceColumn="DCdatapag2" DataSetColumn="DCdatapag2" />
+              <Mapping SourceColumn="DCdatapag3" DataSetColumn="DCdatapag3" />
+              <Mapping SourceColumn="DCpagato1" DataSetColumn="DCpagato1" />
+              <Mapping SourceColumn="DCpagato2" DataSetColumn="DCpagato2" />
+              <Mapping SourceColumn="DCpagato3" DataSetColumn="DCpagato3" />
+              <Mapping SourceColumn="DCanticipi" DataSetColumn="DCanticipi" />
+              <Mapping SourceColumn="DCdirittiop" DataSetColumn="DCdirittiop" />
+              <Mapping SourceColumn="DCtrattenute" DataSetColumn="DCtrattenute" />
+              <Mapping SourceColumn="DCBanca" DataSetColumn="DCBanca" />
+              <Mapping SourceColumn="DCPiazza" DataSetColumn="DCPiazza" />
+              <Mapping SourceColumn="DCpercIVA" DataSetColumn="DCpercIVA" />
+              <Mapping SourceColumn="DCpercdiritti" DataSetColumn="DCpercdiritti" />
+              <Mapping SourceColumn="DCpagam" DataSetColumn="DCpagam" />
+              <Mapping SourceColumn="DCBancagreenapple" DataSetColumn="DCBancagreenapple" />
+              <Mapping SourceColumn="DCbuonoOrdine" DataSetColumn="DCbuonoOrdine" />
+              <Mapping SourceColumn="DCpostaRagSoc" DataSetColumn="DCpostaRagSoc" />
+              <Mapping SourceColumn="DCpostaIndirizzo" DataSetColumn="DCpostaIndirizzo" />
+              <Mapping SourceColumn="DCpostaLocalita" DataSetColumn="DCpostaLocalita" />
+              <Mapping SourceColumn="DCpostaProv" DataSetColumn="DCpostaProv" />
+              <Mapping SourceColumn="DCpostaCAP" DataSetColumn="DCpostaCAP" />
+              <Mapping SourceColumn="DCnumeroPrestazione" DataSetColumn="DCnumeroPrestazione" />
+              <Mapping SourceColumn="DCspese1" DataSetColumn="DCspese1" />
+              <Mapping SourceColumn="DCdescspese1" DataSetColumn="DCdescspese1" />
+              <Mapping SourceColumn="DCspese2" DataSetColumn="DCspese2" />
+              <Mapping SourceColumn="DCdescspese2" DataSetColumn="DCdescspese2" />
+              <Mapping SourceColumn="DCpostaNazione" DataSetColumn="DCpostaNazione" />
+              <Mapping SourceColumn="DClingua" DataSetColumn="DClingua" />
+              <Mapping SourceColumn="DCvaluta" DataSetColumn="DCvaluta" />
+              <Mapping SourceColumn="DCSWIFT" DataSetColumn="DCSWIFT" />
+              <Mapping SourceColumn="Nomenclatura" DataSetColumn="Nomenclatura" />
+              <Mapping SourceColumn="DCPagata" DataSetColumn="DCPagata" />
+              <Mapping SourceColumn="Cambio" DataSetColumn="Cambio" />
+              <Mapping SourceColumn="IdModalita" DataSetColumn="IdModalita" />
+              <Mapping SourceColumn="Codice" DataSetColumn="Codice" />
+              <Mapping SourceColumn="Descrizione" DataSetColumn="Descrizione" />
+              <Mapping SourceColumn="NumRate" DataSetColumn="NumRate" />
+              <Mapping SourceColumn="Giorni" DataSetColumn="Giorni" />
+              <Mapping SourceColumn="FM" DataSetColumn="FM" />
+              <Mapping SourceColumn="RiBa" DataSetColumn="RiBa" />
+              <Mapping SourceColumn="BB" DataSetColumn="BB" />
+              <Mapping SourceColumn="RD" DataSetColumn="RD" />
+              <Mapping SourceColumn="DCSconto" DataSetColumn="DCSconto" />
+              <Mapping SourceColumn="DCScontato" DataSetColumn="DCScontato" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PrestazioniTableAdapter" GeneratorDataComponentClassName="PrestazioniTableAdapter" Name="Prestazioni" UserDataComponentName="PrestazioniTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectName="GREEN_PRODUZIONE.dbo.Prestazioni" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from prestazioni
+</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PRnumero" DataSetColumn="PRnumero" />
+              <Mapping SourceColumn="PRdatainizio" DataSetColumn="PRdatainizio" />
+              <Mapping SourceColumn="PRdatafine" DataSetColumn="PRdatafine" />
+              <Mapping SourceColumn="PRcliente" DataSetColumn="PRcliente" />
+              <Mapping SourceColumn="PRcategoria" DataSetColumn="PRcategoria" />
+              <Mapping SourceColumn="PRtipodiritti" DataSetColumn="PRtipodiritti" />
+              <Mapping SourceColumn="PRtotale" DataSetColumn="PRtotale" />
+              <Mapping SourceColumn="PRdiritti" DataSetColumn="PRdiritti" />
+              <Mapping SourceColumn="PRanticipi" DataSetColumn="PRanticipi" />
+              <Mapping SourceColumn="PRtrattenute" DataSetColumn="PRtrattenute" />
+              <Mapping SourceColumn="PRfattura" DataSetColumn="PRfattura" />
+              <Mapping SourceColumn="PRfatturato" DataSetColumn="PRfatturato" />
+              <Mapping SourceColumn="PRfatturare" DataSetColumn="PRfatturare" />
+              <Mapping SourceColumn="PRdatafattura" DataSetColumn="PRdatafattura" />
+              <Mapping SourceColumn="PRnumerogiorni" DataSetColumn="PRnumerogiorni" />
+              <Mapping SourceColumn="PRutilizzo" DataSetColumn="PRutilizzo" />
+              <Mapping SourceColumn="PRcitinfat" DataSetColumn="PRcitinfat" />
+              <Mapping SourceColumn="PRspedirea" DataSetColumn="PRspedirea" />
+              <Mapping SourceColumn="PRbuonoordine" DataSetColumn="PRbuonoordine" />
+              <Mapping SourceColumn="PRspese" DataSetColumn="PRspese" />
+              <Mapping SourceColumn="PRivaspese" DataSetColumn="PRivaspese" />
+              <Mapping SourceColumn="PRrivalsa" DataSetColumn="PRrivalsa" />
+              <Mapping SourceColumn="PRnote" DataSetColumn="PRnote" />
+              <Mapping SourceColumn="PRcondpag" DataSetColumn="PRcondpag" />
+              <Mapping SourceColumn="PRrivalsaSN" DataSetColumn="PRrivalsaSN" />
+              <Mapping SourceColumn="PRIVASN" DataSetColumn="PRIVASN" />
+              <Mapping SourceColumn="PRgiorni" DataSetColumn="PRgiorni" />
+              <Mapping SourceColumn="PRtotalefattura" DataSetColumn="PRtotalefattura" />
+              <Mapping SourceColumn="PRpagata" DataSetColumn="PRpagata" />
+              <Mapping SourceColumn="PRchiave" DataSetColumn="PRchiave" />
+              <Mapping SourceColumn="PRdescSpese" DataSetColumn="PRdescSpese" />
+              <Mapping SourceColumn="PRspese1" DataSetColumn="PRspese1" />
+              <Mapping SourceColumn="PRdescSpese1" DataSetColumn="PRdescSpese1" />
+              <Mapping SourceColumn="PRspese2" DataSetColumn="PRspese2" />
+              <Mapping SourceColumn="PRdescSpese2" DataSetColumn="PRdescSpese2" />
+              <Mapping SourceColumn="PRmemo" DataSetColumn="PRmemo" />
+              <Mapping SourceColumn="PRImponibile" DataSetColumn="PRImponibile" />
+              <Mapping SourceColumn="PRpctIVA" DataSetColumn="PRpctIVA" />
+              <Mapping SourceColumn="PRimportoIVA" DataSetColumn="PRimportoIVA" />
+              <Mapping SourceColumn="PRannoDoc" DataSetColumn="PRannoDoc" />
+              <Mapping SourceColumn="PRlingua" DataSetColumn="PRlingua" />
+              <Mapping SourceColumn="PRvaluta" DataSetColumn="PRvaluta" />
+              <Mapping SourceColumn="PRovertime" DataSetColumn="PRovertime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientiTableAdapter" Name="Clienti">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectName="GREEN_PRODUZIONE.dbo.Clienti" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [clienti] ([Cliprenome], [Cliragsoc], [Cliindirizzo], [Clilocalita], [Cliprovincia], [CliCAP], [CliRedazione], [Clipostaragsoc], [ClipostaIndirizzo], [Clipostalocalita], [Clipostaprov], [ClipostaCAP], [Clitelefono], [Clifax], [CliIVA], [CliCF], [Clipagamento], [CliBanca], [CliPiazza], [ClipercIVA], [Clipercdiritti], [CliprenomeSN], [Clicodfor], [cligruppo], [CliIBAN], [CliLingua], [CliValuta], [CliNazione], [ClipostaNazione], [CliSWIFT], [CliInUso], [Nomenclatura], [TarTruccatore], [TarParrucchiere], [TarManicurista], [TarGroomer], [CliEMAIL], [GAAttenzione], [GACalcoloIVA], [GANote]) VALUES (@Cliprenome, @Cliragsoc, @Cliindirizzo, @Clilocalita, @Cliprovincia, @CliCAP, @CliRedazione, @Clipostaragsoc, @ClipostaIndirizzo, @Clipostalocalita, @Clipostaprov, @ClipostaCAP, @Clitelefono, @Clifax, @CliIVA, @CliCF, @Clipagamento, @CliBanca, @CliPiazza, @ClipercIVA, @Clipercdiritti, @CliprenomeSN, @Clicodfor, @cligruppo, @CliIBAN, @CliLingua, @CliValuta, @CliNazione, @ClipostaNazione, @CliSWIFT, @CliInUso, @Nomenclatura, @TarTruccatore, @TarParrucchiere, @TarManicurista, @TarGroomer, @CliEMAIL, @GAAttenzione, @GACalcoloIVA, @GANote)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cliprenome" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cliprenome" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cliragsoc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cliragsoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cliindirizzo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cliindirizzo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clilocalita" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clilocalita" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cliprovincia" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cliprovincia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CliCAP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CliCAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliRedazione" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliRedazione" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clipostaragsoc" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clipostaragsoc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ClipostaIndirizzo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClipostaIndirizzo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clipostalocalita" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clipostalocalita" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clipostaprov" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clipostaprov" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ClipostaCAP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ClipostaCAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clitelefono" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clitelefono" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clifax" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clifax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliIVA" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliIVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliCF" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliCF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clipagamento" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clipagamento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliBanca" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliBanca" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliPiazza" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliPiazza" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@ClipercIVA" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="ClipercIVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@Clipercdiritti" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="Clipercdiritti" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@CliprenomeSN" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="CliprenomeSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Clicodfor" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Clicodfor" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@cligruppo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="cligruppo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliIBAN" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliIBAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliLingua" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliLingua" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliValuta" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliValuta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliNazione" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliNazione" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ClipostaNazione" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ClipostaNazione" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliSWIFT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliSWIFT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@CliInUso" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="CliInUso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Nomenclatura" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Nomenclatura" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TarTruccatore" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TarTruccatore" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TarParrucchiere" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TarParrucchiere" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TarManicurista" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TarManicurista" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Double" Direction="Input" ParameterName="@TarGroomer" Precision="0" ProviderType="Float" Scale="0" Size="0" SourceColumn="TarGroomer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CliEMAIL" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CliEMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GAAttenzione" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GAAttenzione" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@GACalcoloIVA" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="GACalcoloIVA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@GANote" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="GANote" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select * from clienti</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Clicodice" DataSetColumn="Clicodice" />
+              <Mapping SourceColumn="Cliprenome" DataSetColumn="Cliprenome" />
+              <Mapping SourceColumn="Cliragsoc" DataSetColumn="Cliragsoc" />
+              <Mapping SourceColumn="Cliindirizzo" DataSetColumn="Cliindirizzo" />
+              <Mapping SourceColumn="Clilocalita" DataSetColumn="Clilocalita" />
+              <Mapping SourceColumn="Cliprovincia" DataSetColumn="Cliprovincia" />
+              <Mapping SourceColumn="CliCAP" DataSetColumn="CliCAP" />
+              <Mapping SourceColumn="CliRedazione" DataSetColumn="CliRedazione" />
+              <Mapping SourceColumn="Clipostaragsoc" DataSetColumn="Clipostaragsoc" />
+              <Mapping SourceColumn="ClipostaIndirizzo" DataSetColumn="ClipostaIndirizzo" />
+              <Mapping SourceColumn="Clipostalocalita" DataSetColumn="Clipostalocalita" />
+              <Mapping SourceColumn="Clipostaprov" DataSetColumn="Clipostaprov" />
+              <Mapping SourceColumn="ClipostaCAP" DataSetColumn="ClipostaCAP" />
+              <Mapping SourceColumn="Clitelefono" DataSetColumn="Clitelefono" />
+              <Mapping SourceColumn="Clifax" DataSetColumn="Clifax" />
+              <Mapping SourceColumn="CliIVA" DataSetColumn="CliIVA" />
+              <Mapping SourceColumn="CliCF" DataSetColumn="CliCF" />
+              <Mapping SourceColumn="Clipagamento" DataSetColumn="Clipagamento" />
+              <Mapping SourceColumn="CliBanca" DataSetColumn="CliBanca" />
+              <Mapping SourceColumn="CliPiazza" DataSetColumn="CliPiazza" />
+              <Mapping SourceColumn="ClipercIVA" DataSetColumn="ClipercIVA" />
+              <Mapping SourceColumn="Clipercdiritti" DataSetColumn="Clipercdiritti" />
+              <Mapping SourceColumn="CliprenomeSN" DataSetColumn="CliprenomeSN" />
+              <Mapping SourceColumn="Clicodfor" DataSetColumn="Clicodfor" />
+              <Mapping SourceColumn="cligruppo" DataSetColumn="cligruppo" />
+              <Mapping SourceColumn="CliIBAN" DataSetColumn="CliIBAN" />
+              <Mapping SourceColumn="CliLingua" DataSetColumn="CliLingua" />
+              <Mapping SourceColumn="CliValuta" DataSetColumn="CliValuta" />
+              <Mapping SourceColumn="CliNazione" DataSetColumn="CliNazione" />
+              <Mapping SourceColumn="ClipostaNazione" DataSetColumn="ClipostaNazione" />
+              <Mapping SourceColumn="CliSWIFT" DataSetColumn="CliSWIFT" />
+              <Mapping SourceColumn="CliInUso" DataSetColumn="CliInUso" />
+              <Mapping SourceColumn="Nomenclatura" DataSetColumn="Nomenclatura" />
+              <Mapping SourceColumn="TarTruccatore" DataSetColumn="TarTruccatore" />
+              <Mapping SourceColumn="TarParrucchiere" DataSetColumn="TarParrucchiere" />
+              <Mapping SourceColumn="TarManicurista" DataSetColumn="TarManicurista" />
+              <Mapping SourceColumn="TarGroomer" DataSetColumn="TarGroomer" />
+              <Mapping SourceColumn="CliEMAIL" DataSetColumn="CliEMAIL" />
+              <Mapping SourceColumn="GAAttenzione" DataSetColumn="GAAttenzione" />
+              <Mapping SourceColumn="GACalcoloIVA" DataSetColumn="GACalcoloIVA" />
+              <Mapping SourceColumn="GANote" DataSetColumn="GANote" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SchedaFornitoreTableAdapter" Name="SchedaFornitore">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select '' AS DCNumeroCompleto,'' AS DCAnno,Lista_CategoriaServizi.csdescrizione as CATEGORIA,Lista_PrestazioniTipi.descrizione AS TIPO,srdatainizio AS DATAINIZIO, srdatafine AS DATAFINE, '' AS FATTURA,'' AS DATAFATTURA, clienti.cliragsoc, fornitori.*,servizi.* from fornitori
+inner join servizi on servizi.SROperatore=fornitori.forcodice
+inner join Lista_PrestazioniTipi on servizi.SRtiposervizio = Lista_PrestazioniTipi.idtipo
+inner join clienti on servizi.srcliente=clienti.clicodice
+inner join Lista_CategoriaServizi on servizi.SRcategoria=Lista_CategoriaServizi.cscodice</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Forcodice" DataSetColumn="Forcodice" />
+              <Mapping SourceColumn="Forprenome" DataSetColumn="Forprenome" />
+              <Mapping SourceColumn="Forragsoc" DataSetColumn="Forragsoc" />
+              <Mapping SourceColumn="Forindirizzo" DataSetColumn="Forindirizzo" />
+              <Mapping SourceColumn="Forlocalita" DataSetColumn="Forlocalita" />
+              <Mapping SourceColumn="Forprovincia" DataSetColumn="Forprovincia" />
+              <Mapping SourceColumn="ForCAP" DataSetColumn="ForCAP" />
+              <Mapping SourceColumn="Forpostaragsoc" DataSetColumn="Forpostaragsoc" />
+              <Mapping SourceColumn="Forpostaind" DataSetColumn="Forpostaind" />
+              <Mapping SourceColumn="Forpostaloc" DataSetColumn="Forpostaloc" />
+              <Mapping SourceColumn="ForpostCAP" DataSetColumn="ForpostCAP" />
+              <Mapping SourceColumn="Fortelef" DataSetColumn="Fortelef" />
+              <Mapping SourceColumn="Forfax" DataSetColumn="Forfax" />
+              <Mapping SourceColumn="ForIVA" DataSetColumn="ForIVA" />
+              <Mapping SourceColumn="ForCF" DataSetColumn="ForCF" />
+              <Mapping SourceColumn="Fordatanascita" DataSetColumn="Fordatanascita" />
+              <Mapping SourceColumn="Forluogonascita" DataSetColumn="Forluogonascita" />
+              <Mapping SourceColumn="Forpagamento" DataSetColumn="Forpagamento" />
+              <Mapping SourceColumn="Forbanca" DataSetColumn="Forbanca" />
+              <Mapping SourceColumn="ForPiazza" DataSetColumn="ForPiazza" />
+              <Mapping SourceColumn="ForpercIVA" DataSetColumn="ForpercIVA" />
+              <Mapping SourceColumn="Forpercritenuta" DataSetColumn="Forpercritenuta" />
+              <Mapping SourceColumn="Forpercacconto" DataSetColumn="Forpercacconto" />
+              <Mapping SourceColumn="Forpercsuacconto" DataSetColumn="Forpercsuacconto" />
+              <Mapping SourceColumn="Forperc1" DataSetColumn="Forperc1" />
+              <Mapping SourceColumn="Forperc2" DataSetColumn="Forperc2" />
+              <Mapping SourceColumn="Forperc3" DataSetColumn="Forperc3" />
+              <Mapping SourceColumn="Forperc4" DataSetColumn="Forperc4" />
+              <Mapping SourceColumn="Forperc5" DataSetColumn="Forperc5" />
+              <Mapping SourceColumn="Foroperatore" DataSetColumn="Foroperatore" />
+              <Mapping SourceColumn="Forperc6" DataSetColumn="Forperc6" />
+              <Mapping SourceColumn="Forcat1" DataSetColumn="Forcat1" />
+              <Mapping SourceColumn="Forcat2" DataSetColumn="Forcat2" />
+              <Mapping SourceColumn="Forcat3" DataSetColumn="Forcat3" />
+              <Mapping SourceColumn="Forcat4" DataSetColumn="Forcat4" />
+              <Mapping SourceColumn="Forcat5" DataSetColumn="Forcat5" />
+              <Mapping SourceColumn="Forcat6" DataSetColumn="Forcat6" />
+              <Mapping SourceColumn="ForIBAN" DataSetColumn="ForIBAN" />
+              <Mapping SourceColumn="ForEsenzioneIvaArt15" DataSetColumn="ForEsenzioneIvaArt15" />
+              <Mapping SourceColumn="ForPctRivPrev" DataSetColumn="ForPctRivPrev" />
+              <Mapping SourceColumn="ForPagCodice" DataSetColumn="ForPagCodice" />
+              <Mapping SourceColumn="ForNazione" DataSetColumn="ForNazione" />
+              <Mapping SourceColumn="ForPostaNazione" DataSetColumn="ForPostaNazione" />
+              <Mapping SourceColumn="ForPostaProv" DataSetColumn="ForPostaProv" />
+              <Mapping SourceColumn="ForInUso" DataSetColumn="ForInUso" />
+              <Mapping SourceColumn="SRcodice" DataSetColumn="SRcodice" />
+              <Mapping SourceColumn="SRoperatore" DataSetColumn="SRoperatore" />
+              <Mapping SourceColumn="SRcliente" DataSetColumn="SRcliente" />
+              <Mapping SourceColumn="SRcategoria" DataSetColumn="SRcategoria" />
+              <Mapping SourceColumn="SRtiposervizio" DataSetColumn="SRtiposervizio" />
+              <Mapping SourceColumn="SRimporto" DataSetColumn="SRimporto" />
+              <Mapping SourceColumn="SRimponibile" DataSetColumn="SRimponibile" />
+              <Mapping SourceColumn="SRdiritti" DataSetColumn="SRdiritti" />
+              <Mapping SourceColumn="SRanticipi" DataSetColumn="SRanticipi" />
+              <Mapping SourceColumn="SRtrattenute" DataSetColumn="SRtrattenute" />
+              <Mapping SourceColumn="SRfatturacli" DataSetColumn="SRfatturacli" />
+              <Mapping SourceColumn="SRfatturafor" DataSetColumn="SRfatturafor" />
+              <Mapping SourceColumn="SRdatafatturacli" DataSetColumn="SRdatafatturacli" />
+              <Mapping SourceColumn="SRdatafatturafor" DataSetColumn="SRdatafatturafor" />
+              <Mapping SourceColumn="SRfatturare" DataSetColumn="SRfatturare" />
+              <Mapping SourceColumn="SRfatturato" DataSetColumn="SRfatturato" />
+              <Mapping SourceColumn="SRnumgiorni" DataSetColumn="SRnumgiorni" />
+              <Mapping SourceColumn="SRnumeroprestazione" DataSetColumn="SRnumeroprestazione" />
+              <Mapping SourceColumn="SRfatclianno" DataSetColumn="SRfatclianno" />
+              <Mapping SourceColumn="SRanticipige" DataSetColumn="SRanticipige" />
+              <Mapping SourceColumn="SRpagato" DataSetColumn="SRpagato" />
+              <Mapping SourceColumn="SRdatainizio" DataSetColumn="SRdatainizio" />
+              <Mapping SourceColumn="SRdatafine" DataSetColumn="SRdatafine" />
+              <Mapping SourceColumn="SRimportoLordo" DataSetColumn="SRimportoLordo" />
+              <Mapping SourceColumn="SRpctDiritti" DataSetColumn="SRpctDiritti" />
+              <Mapping SourceColumn="SRdescSpese" DataSetColumn="SRdescSpese" />
+              <Mapping SourceColumn="SRspese" DataSetColumn="SRspese" />
+              <Mapping SourceColumn="SRspeseGA" DataSetColumn="SRspeseGA" />
+              <Mapping SourceColumn="SRdescSpese1" DataSetColumn="SRdescSpese1" />
+              <Mapping SourceColumn="SRspese1" DataSetColumn="SRspese1" />
+              <Mapping SourceColumn="SRspeseGA1" DataSetColumn="SRspeseGA1" />
+              <Mapping SourceColumn="SRdescSpese2" DataSetColumn="SRdescSpese2" />
+              <Mapping SourceColumn="SRspese2" DataSetColumn="SRspese2" />
+              <Mapping SourceColumn="SRspeseGA2" DataSetColumn="SRspeseGA2" />
+              <Mapping SourceColumn="SRAnnoFatt" DataSetColumn="SRAnnoFatt" />
+              <Mapping SourceColumn="SRMeseFatt" DataSetColumn="SRMeseFatt" />
+              <Mapping SourceColumn="SResenzioneIvaArt15" DataSetColumn="SResenzioneIvaArt15" />
+              <Mapping SourceColumn="SRpctRivPrev" DataSetColumn="SRpctRivPrev" />
+              <Mapping SourceColumn="SRpctIVA" DataSetColumn="SRpctIVA" />
+              <Mapping SourceColumn="SRpctRitAcc" DataSetColumn="SRpctRitAcc" />
+              <Mapping SourceColumn="SRimportoRedazionale" DataSetColumn="SRimportoRedazionale" />
+              <Mapping SourceColumn="SRimportoOvertime" DataSetColumn="SRimportoOvertime" />
+              <Mapping SourceColumn="SRdescSpeseGA" DataSetColumn="SRdescSpeseGA" />
+              <Mapping SourceColumn="SRdescSpeseGA1" DataSetColumn="SRdescSpeseGA1" />
+              <Mapping SourceColumn="SRdescSpeseGA2" DataSetColumn="SRdescSpeseGA2" />
+              <Mapping SourceColumn="SRimportoOvertimeGA" DataSetColumn="SRimportoOvertimeGA" />
+              <Mapping SourceColumn="SRImportoGA" DataSetColumn="SRImportoGA" />
+              <Mapping SourceColumn="SRFornFatturare" DataSetColumn="SRFornFatturare" />
+              <Mapping SourceColumn="SRFornPagata" DataSetColumn="SRFornPagata" />
+              <Mapping SourceColumn="cliragsoc" DataSetColumn="cliragsoc" />
+              <Mapping SourceColumn="FATTURA" DataSetColumn="FATTURA" />
+              <Mapping SourceColumn="DATAFATTURA" DataSetColumn="DATAFATTURA" />
+              <Mapping SourceColumn="DATAINIZIO" DataSetColumn="DATAINIZIO" />
+              <Mapping SourceColumn="DATAFINE" DataSetColumn="DATAFINE" />
+              <Mapping SourceColumn="SRCompensoAggiunto" DataSetColumn="SRCompensoAggiunto" />
+              <Mapping SourceColumn="TIPO" DataSetColumn="TIPO" />
+              <Mapping SourceColumn="CATEGORIA" DataSetColumn="CATEGORIA" />
+              <Mapping SourceColumn="DCNumeroCompleto" DataSetColumn="DCNumeroCompleto" />
+              <Mapping SourceColumn="DCAnno" DataSetColumn="DCAnno" />
+              <Mapping SourceColumn="ForEMAIL" DataSetColumn="ForEMAIL" />
+              <Mapping SourceColumn="GACalcoloIVA" DataSetColumn="GACalcoloIVA" />
+              <Mapping SourceColumn="GANote" DataSetColumn="GANote" />
+              <Mapping SourceColumn="Forperc0" DataSetColumn="Forperc0" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DocumfornitoriTableAdapter" Name="Documfornitori">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select '' AS DATA, * from documfornitori
+inner join fornitori on documfornitori.DFfornitore = fornitori.forcodice</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DFnumero" DataSetColumn="DFnumero" />
+              <Mapping SourceColumn="DFdata" DataSetColumn="DFdata" />
+              <Mapping SourceColumn="DFtipo" DataSetColumn="DFtipo" />
+              <Mapping SourceColumn="DFfornitore" DataSetColumn="DFfornitore" />
+              <Mapping SourceColumn="DFpagamento" DataSetColumn="DFpagamento" />
+              <Mapping SourceColumn="DFdatapagamento" DataSetColumn="DFdatapagamento" />
+              <Mapping SourceColumn="DFpagata" DataSetColumn="DFpagata" />
+              <Mapping SourceColumn="DFimponibile" DataSetColumn="DFimponibile" />
+              <Mapping SourceColumn="DFIVA" DataSetColumn="DFIVA" />
+              <Mapping SourceColumn="DFritenuta" DataSetColumn="DFritenuta" />
+              <Mapping SourceColumn="DFspese" DataSetColumn="DFspese" />
+              <Mapping SourceColumn="DFanticipo" DataSetColumn="DFanticipo" />
+              <Mapping SourceColumn="DFtotale" DataSetColumn="DFtotale" />
+              <Mapping SourceColumn="DFdescfattura" DataSetColumn="DFdescfattura" />
+              <Mapping SourceColumn="DFdescspese" DataSetColumn="DFdescspese" />
+              <Mapping SourceColumn="DFnote" DataSetColumn="DFnote" />
+              <Mapping SourceColumn="DFbanca" DataSetColumn="DFbanca" />
+              <Mapping SourceColumn="DFPiazza" DataSetColumn="DFPiazza" />
+              <Mapping SourceColumn="DCBancagreenapple" DataSetColumn="DCBancagreenapple" />
+              <Mapping SourceColumn="DFrivprev" DataSetColumn="DFrivprev" />
+              <Mapping SourceColumn="DFrivdesc" DataSetColumn="DFrivdesc" />
+              <Mapping SourceColumn="DFesenzioneIvaArt15" DataSetColumn="DFesenzioneIvaArt15" />
+              <Mapping SourceColumn="DFspese1" DataSetColumn="DFspese1" />
+              <Mapping SourceColumn="DFdescspese1" DataSetColumn="DFdescspese1" />
+              <Mapping SourceColumn="DFspese2" DataSetColumn="DFspese2" />
+              <Mapping SourceColumn="DFdescspese2" DataSetColumn="DFdescspese2" />
+              <Mapping SourceColumn="DFpostaRagSoc" DataSetColumn="DFpostaRagSoc" />
+              <Mapping SourceColumn="DFpostaInd" DataSetColumn="DFpostaInd" />
+              <Mapping SourceColumn="DFpostaLoc" DataSetColumn="DFpostaLoc" />
+              <Mapping SourceColumn="DFpostaProv" DataSetColumn="DFpostaProv" />
+              <Mapping SourceColumn="DFpostaCAP" DataSetColumn="DFpostaCAP" />
+              <Mapping SourceColumn="DFAnnoFatt" DataSetColumn="DFAnnoFatt" />
+              <Mapping SourceColumn="DFMeseFatt" DataSetColumn="DFMeseFatt" />
+              <Mapping SourceColumn="DFimportoOvertime" DataSetColumn="DFimportoOvertime" />
+              <Mapping SourceColumn="DFimportoSfilate" DataSetColumn="DFimportoSfilate" />
+              <Mapping SourceColumn="DCid" DataSetColumn="DCid" />
+              <Mapping SourceColumn="Forcodice" DataSetColumn="Forcodice" />
+              <Mapping SourceColumn="Forprenome" DataSetColumn="Forprenome" />
+              <Mapping SourceColumn="Forragsoc" DataSetColumn="Forragsoc" />
+              <Mapping SourceColumn="Forindirizzo" DataSetColumn="Forindirizzo" />
+              <Mapping SourceColumn="Forlocalita" DataSetColumn="Forlocalita" />
+              <Mapping SourceColumn="Forprovincia" DataSetColumn="Forprovincia" />
+              <Mapping SourceColumn="ForCAP" DataSetColumn="ForCAP" />
+              <Mapping SourceColumn="Forpostaragsoc" DataSetColumn="Forpostaragsoc" />
+              <Mapping SourceColumn="Forpostaind" DataSetColumn="Forpostaind" />
+              <Mapping SourceColumn="Forpostaloc" DataSetColumn="Forpostaloc" />
+              <Mapping SourceColumn="ForpostCAP" DataSetColumn="ForpostCAP" />
+              <Mapping SourceColumn="Fortelef" DataSetColumn="Fortelef" />
+              <Mapping SourceColumn="Forfax" DataSetColumn="Forfax" />
+              <Mapping SourceColumn="ForIVA" DataSetColumn="ForIVA" />
+              <Mapping SourceColumn="ForCF" DataSetColumn="ForCF" />
+              <Mapping SourceColumn="Fordatanascita" DataSetColumn="Fordatanascita" />
+              <Mapping SourceColumn="Forluogonascita" DataSetColumn="Forluogonascita" />
+              <Mapping SourceColumn="Forpagamento" DataSetColumn="Forpagamento" />
+              <Mapping SourceColumn="Forbanca" DataSetColumn="Forbanca" />
+              <Mapping SourceColumn="ForPiazza" DataSetColumn="ForPiazza" />
+              <Mapping SourceColumn="ForpercIVA" DataSetColumn="ForpercIVA" />
+              <Mapping SourceColumn="Forpercritenuta" DataSetColumn="Forpercritenuta" />
+              <Mapping SourceColumn="Forpercacconto" DataSetColumn="Forpercacconto" />
+              <Mapping SourceColumn="Forpercsuacconto" DataSetColumn="Forpercsuacconto" />
+              <Mapping SourceColumn="Forperc1" DataSetColumn="Forperc1" />
+              <Mapping SourceColumn="Forperc2" DataSetColumn="Forperc2" />
+              <Mapping SourceColumn="Forperc3" DataSetColumn="Forperc3" />
+              <Mapping SourceColumn="Forperc4" DataSetColumn="Forperc4" />
+              <Mapping SourceColumn="Forperc5" DataSetColumn="Forperc5" />
+              <Mapping SourceColumn="Foroperatore" DataSetColumn="Foroperatore" />
+              <Mapping SourceColumn="Forperc6" DataSetColumn="Forperc6" />
+              <Mapping SourceColumn="Forcat1" DataSetColumn="Forcat1" />
+              <Mapping SourceColumn="Forcat2" DataSetColumn="Forcat2" />
+              <Mapping SourceColumn="Forcat3" DataSetColumn="Forcat3" />
+              <Mapping SourceColumn="Forcat4" DataSetColumn="Forcat4" />
+              <Mapping SourceColumn="Forcat5" DataSetColumn="Forcat5" />
+              <Mapping SourceColumn="Forcat6" DataSetColumn="Forcat6" />
+              <Mapping SourceColumn="ForIBAN" DataSetColumn="ForIBAN" />
+              <Mapping SourceColumn="ForEsenzioneIvaArt15" DataSetColumn="ForEsenzioneIvaArt15" />
+              <Mapping SourceColumn="ForPctRivPrev" DataSetColumn="ForPctRivPrev" />
+              <Mapping SourceColumn="ForPagCodice" DataSetColumn="ForPagCodice" />
+              <Mapping SourceColumn="ForNazione" DataSetColumn="ForNazione" />
+              <Mapping SourceColumn="ForPostaNazione" DataSetColumn="ForPostaNazione" />
+              <Mapping SourceColumn="ForPostaProv" DataSetColumn="ForPostaProv" />
+              <Mapping SourceColumn="ForInUso" DataSetColumn="ForInUso" />
+              <Mapping SourceColumn="DATA" DataSetColumn="DATA" />
+              <Mapping SourceColumn="ForEMAIL" DataSetColumn="ForEMAIL" />
+              <Mapping SourceColumn="GACalcoloIVA" DataSetColumn="GACalcoloIVA" />
+              <Mapping SourceColumn="GANote" DataSetColumn="GANote" />
+              <Mapping SourceColumn="Forperc0" DataSetColumn="Forperc0" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AnagraficiTableAdapter" Name="Anagrafici">
+            <MainSource>
+              <DbSource ConnectionRef="GREENAPPLEConnectionString (Web.config)" DbObjectName="GREEN_PRODUZIONE.dbo.Admin_DatiAnagrifici" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select top 1 * from Admin_DatiAnagrifici</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RagSoc" DataSetColumn="RagSoc" />
+              <Mapping SourceColumn="Indirizzo" DataSetColumn="Indirizzo" />
+              <Mapping SourceColumn="Localita" DataSetColumn="Localita" />
+              <Mapping SourceColumn="CAP" DataSetColumn="CAP" />
+              <Mapping SourceColumn="Nazione" DataSetColumn="Nazione" />
+              <Mapping SourceColumn="PIVA" DataSetColumn="PIVA" />
+              <Mapping SourceColumn="AliquotaIVA" DataSetColumn="AliquotaIVA" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CLIENTI_FATTURA_Righe" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CLIENTI_FATTURA_Righe" msprop:Generator_DataSetName="CLIENTI_FATTURA_Righe">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Documclienti" msprop:Generator_UserTableName="Documclienti" msprop:Generator_RowDeletedName="DocumclientiRowDeleted" msprop:Generator_RowChangedName="DocumclientiRowChanged" msprop:Generator_RowClassName="DocumclientiRow" msprop:Generator_RowChangingName="DocumclientiRowChanging" msprop:Generator_RowEvArgName="DocumclientiRowChangeEvent" msprop:Generator_RowEvHandlerName="DocumclientiRowChangeEventHandler" msprop:Generator_TableClassName="DocumclientiDataTable" msprop:Generator_TableVarName="tableDocumclienti" msprop:Generator_RowDeletingName="DocumclientiRowDeleting" msprop:Generator_TablePropName="Documclienti">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DCid" msprop:Generator_UserColumnName="DCid" msprop:Generator_ColumnVarNameInTable="columnDCid" msprop:Generator_ColumnPropNameInRow="DCid" msprop:Generator_ColumnPropNameInTable="DCidColumn" type="xs:int" />
+              <xs:element name="DCnumeroCompleto" msprop:Generator_UserColumnName="DCnumeroCompleto" msprop:Generator_ColumnVarNameInTable="columnDCnumero" msprop:Generator_ColumnPropNameInRow="DCnumeroCompleto" msprop:Generator_ColumnPropNameInTable="DCnumeroCompletoColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="DCanno" msprop:Generator_UserColumnName="DCanno" msprop:Generator_ColumnVarNameInTable="columnDCanno" msprop:Generator_ColumnPropNameInRow="DCanno" msprop:Generator_ColumnPropNameInTable="DCannoColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="DCtipo" msprop:Generator_UserColumnName="DCtipo" msprop:Generator_ColumnVarNameInTable="columnDCtipo" msprop:Generator_ColumnPropNameInRow="DCtipo" msprop:Generator_ColumnPropNameInTable="DCtipoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCdata" msprop:Generator_UserColumnName="DCdata" msprop:Generator_ColumnVarNameInTable="columnDCdata" msprop:Generator_ColumnPropNameInRow="DCdata" msprop:Generator_ColumnPropNameInTable="DCdataColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DCcliente" msprop:Generator_UserColumnName="DCcliente" msprop:Generator_ColumnVarNameInTable="columnDCcliente" msprop:Generator_ColumnPropNameInRow="DCcliente" msprop:Generator_ColumnPropNameInTable="DCclienteColumn" type="xs:double" />
+              <xs:element name="DCimponibile" msprop:Generator_UserColumnName="DCimponibile" msprop:Generator_ColumnVarNameInTable="columnDCimponibile" msprop:Generator_ColumnPropNameInRow="DCimponibile" msprop:Generator_ColumnPropNameInTable="DCimponibileColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCspese" msprop:Generator_UserColumnName="DCspese" msprop:Generator_ColumnVarNameInTable="columnDCspese" msprop:Generator_ColumnPropNameInRow="DCspese" msprop:Generator_ColumnPropNameInTable="DCspeseColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCdiritti" msprop:Generator_UserColumnName="DCdiritti" msprop:Generator_ColumnVarNameInTable="columnDCdiritti" msprop:Generator_ColumnPropNameInRow="DCdiritti" msprop:Generator_ColumnPropNameInTable="DCdirittiColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCIVA" msprop:Generator_UserColumnName="DCIVA" msprop:Generator_ColumnVarNameInTable="columnDCIVA" msprop:Generator_ColumnPropNameInRow="DCIVA" msprop:Generator_ColumnPropNameInTable="DCIVAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCtotale" msprop:Generator_UserColumnName="DCtotale" msprop:Generator_ColumnVarNameInTable="columnDCtotale" msprop:Generator_ColumnPropNameInRow="DCtotale" msprop:Generator_ColumnPropNameInTable="DCtotaleColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCdescfat" msprop:Generator_UserColumnName="DCdescfat" msprop:Generator_ColumnVarNameInTable="columnDCdescfat" msprop:Generator_ColumnPropNameInRow="DCdescfat" msprop:Generator_ColumnPropNameInTable="DCdescfatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCdescspese" msprop:Generator_UserColumnName="DCdescspese" msprop:Generator_ColumnVarNameInTable="columnDCdescspese" msprop:Generator_ColumnPropNameInRow="DCdescspese" msprop:Generator_ColumnPropNameInTable="DCdescspeseColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCdatapag1" msprop:Generator_UserColumnName="DCdatapag1" msprop:Generator_ColumnVarNameInTable="columnDCdatapag1" msprop:Generator_ColumnPropNameInRow="DCdatapag1" msprop:Generator_ColumnPropNameInTable="DCdatapag1Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DCdatapag2" msprop:Generator_UserColumnName="DCdatapag2" msprop:Generator_ColumnVarNameInTable="columnDCdatapag2" msprop:Generator_ColumnPropNameInRow="DCdatapag2" msprop:Generator_ColumnPropNameInTable="DCdatapag2Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DCdatapag3" msprop:Generator_UserColumnName="DCdatapag3" msprop:Generator_ColumnVarNameInTable="columnDCdatapag3" msprop:Generator_ColumnPropNameInRow="DCdatapag3" msprop:Generator_ColumnPropNameInTable="DCdatapag3Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DCpagato1" msprop:Generator_UserColumnName="DCpagato1" msprop:Generator_ColumnVarNameInTable="columnDCpagato1" msprop:Generator_ColumnPropNameInRow="DCpagato1" msprop:Generator_ColumnPropNameInTable="DCpagato1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpagato2" msprop:Generator_UserColumnName="DCpagato2" msprop:Generator_ColumnVarNameInTable="columnDCpagato2" msprop:Generator_ColumnPropNameInRow="DCpagato2" msprop:Generator_ColumnPropNameInTable="DCpagato2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpagato3" msprop:Generator_UserColumnName="DCpagato3" msprop:Generator_ColumnVarNameInTable="columnDCpagato3" msprop:Generator_ColumnPropNameInRow="DCpagato3" msprop:Generator_ColumnPropNameInTable="DCpagato3Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCanticipi" msprop:Generator_UserColumnName="DCanticipi" msprop:Generator_ColumnVarNameInTable="columnDCanticipi" msprop:Generator_ColumnPropNameInRow="DCanticipi" msprop:Generator_ColumnPropNameInTable="DCanticipiColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCdirittiop" msprop:Generator_UserColumnName="DCdirittiop" msprop:Generator_ColumnVarNameInTable="columnDCdirittiop" msprop:Generator_ColumnPropNameInRow="DCdirittiop" msprop:Generator_ColumnPropNameInTable="DCdirittiopColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCtrattenute" msprop:Generator_UserColumnName="DCtrattenute" msprop:Generator_ColumnVarNameInTable="columnDCtrattenute" msprop:Generator_ColumnPropNameInRow="DCtrattenute" msprop:Generator_ColumnPropNameInTable="DCtrattenuteColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="DCBanca" msprop:Generator_UserColumnName="DCBanca" msprop:Generator_ColumnVarNameInTable="columnDCBanca" msprop:Generator_ColumnPropNameInRow="DCBanca" msprop:Generator_ColumnPropNameInTable="DCBancaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCPiazza" msprop:Generator_UserColumnName="DCPiazza" msprop:Generator_ColumnVarNameInTable="columnDCPiazza" msprop:Generator_ColumnPropNameInRow="DCPiazza" msprop:Generator_ColumnPropNameInTable="DCPiazzaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpercIVA" msprop:Generator_UserColumnName="DCpercIVA" msprop:Generator_ColumnVarNameInTable="columnDCpercIVA" msprop:Generator_ColumnPropNameInRow="DCpercIVA" msprop:Generator_ColumnPropNameInTable="DCpercIVAColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DCpercdiritti" msprop:Generator_UserColumnName="DCpercdiritti" msprop:Generator_ColumnVarNameInTable="columnDCpercdiritti" msprop:Generator_ColumnPropNameInRow="DCpercdiritti" msprop:Generator_ColumnPropNameInTable="DCpercdirittiColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DCpagam" msprop:Generator_UserColumnName="DCpagam" msprop:Generator_ColumnVarNameInTable="columnDCpagam" msprop:Generator_ColumnPropNameInRow="DCpagam" msprop:Generator_ColumnPropNameInTable="DCpagamColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCBancagreenapple" msprop:Generator_UserColumnName="DCBancagreenapple" msprop:Generator_ColumnVarNameInTable="columnDCBancagreenapple" msprop:Generator_ColumnPropNameInRow="DCBancagreenapple" msprop:Generator_ColumnPropNameInTable="DCBancagreenappleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCbuonoOrdine" msprop:Generator_UserColumnName="DCbuonoOrdine" msprop:Generator_ColumnVarNameInTable="columnDCbuonoOrdine" msprop:Generator_ColumnPropNameInRow="DCbuonoOrdine" msprop:Generator_ColumnPropNameInTable="DCbuonoOrdineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaRagSoc" msprop:Generator_UserColumnName="DCpostaRagSoc" msprop:Generator_ColumnVarNameInTable="columnDCpostaRagSoc" msprop:Generator_ColumnPropNameInRow="DCpostaRagSoc" msprop:Generator_ColumnPropNameInTable="DCpostaRagSocColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaIndirizzo" msprop:Generator_UserColumnName="DCpostaIndirizzo" msprop:Generator_ColumnVarNameInTable="columnDCpostaIndirizzo" msprop:Generator_ColumnPropNameInRow="DCpostaIndirizzo" msprop:Generator_ColumnPropNameInTable="DCpostaIndirizzoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaLocalita" msprop:Generator_UserColumnName="DCpostaLocalita" msprop:Generator_ColumnVarNameInTable="columnDCpostaLocalita" msprop:Generator_ColumnPropNameInRow="DCpostaLocalita" msprop:Generator_ColumnPropNameInTable="DCpostaLocalitaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaProv" msprop:Generator_UserColumnName="DCpostaProv" msprop:Generator_ColumnVarNameInTable="columnDCpostaProv" msprop:Generator_ColumnPropNameInRow="DCpostaProv" msprop:Generator_ColumnPropNameInTable="DCpostaProvColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaCAP" msprop:Generator_UserColumnName="DCpostaCAP" msprop:Generator_ColumnVarNameInTable="columnDCpostaCAP" msprop:Generator_ColumnPropNameInRow="DCpostaCAP" msprop:Generator_ColumnPropNameInTable="DCpostaCAPColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DCnumeroPrestazione" msprop:Generator_UserColumnName="DCnumeroPrestazione" msprop:Generator_ColumnVarNameInTable="columnDCnumeroPrestazione" msprop:Generator_ColumnPropNameInRow="DCnumeroPrestazione" msprop:Generator_ColumnPropNameInTable="DCnumeroPrestazioneColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DCspese1" msprop:Generator_UserColumnName="DCspese1" msprop:Generator_ColumnVarNameInTable="columnDCspese1" msprop:Generator_ColumnPropNameInRow="DCspese1" msprop:Generator_ColumnPropNameInTable="DCspese1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="DCdescspese1" msprop:Generator_UserColumnName="DCdescspese1" msprop:Generator_ColumnVarNameInTable="columnDCdescspese1" msprop:Generator_ColumnPropNameInRow="DCdescspese1" msprop:Generator_ColumnPropNameInTable="DCdescspese1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCspese2" msprop:Generator_UserColumnName="DCspese2" msprop:Generator_ColumnVarNameInTable="columnDCspese2" msprop:Generator_ColumnPropNameInRow="DCspese2" msprop:Generator_ColumnPropNameInTable="DCspese2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="DCdescspese2" msprop:Generator_UserColumnName="DCdescspese2" msprop:Generator_ColumnVarNameInTable="columnDCdescspese2" msprop:Generator_ColumnPropNameInRow="DCdescspese2" msprop:Generator_ColumnPropNameInTable="DCdescspese2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCpostaNazione" msprop:Generator_UserColumnName="DCpostaNazione" msprop:Generator_ColumnVarNameInTable="columnDCpostaNazione" msprop:Generator_ColumnPropNameInRow="DCpostaNazione" msprop:Generator_ColumnPropNameInTable="DCpostaNazioneColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DClingua" msprop:Generator_UserColumnName="DClingua" msprop:Generator_ColumnVarNameInTable="columnDClingua" msprop:Generator_ColumnPropNameInRow="DClingua" msprop:Generator_ColumnPropNameInTable="DClinguaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCvaluta" msprop:Generator_UserColumnName="DCvaluta" msprop:Generator_ColumnVarNameInTable="columnDCvaluta" msprop:Generator_ColumnPropNameInRow="DCvaluta" msprop:Generator_ColumnPropNameInTable="DCvalutaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCSWIFT" msprop:Generator_UserColumnName="DCSWIFT" msprop:Generator_ColumnVarNameInTable="columnDCSWIFT" msprop:Generator_ColumnPropNameInRow="DCSWIFT" msprop:Generator_ColumnPropNameInTable="DCSWIFTColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nomenclatura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCPagata" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Cambio" type="xs:double" minOccurs="0" />
+              <xs:element name="IdModalita" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" minOccurs="0" />
+              <xs:element name="Codice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descrizione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumRate" type="xs:short" minOccurs="0" />
+              <xs:element name="Giorni" type="xs:short" minOccurs="0" />
+              <xs:element name="FM" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RiBa" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BB" type="xs:boolean" minOccurs="0" />
+              <xs:element name="RD" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DCSconto" type="xs:double" minOccurs="0" />
+              <xs:element name="DCScontato" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Prestazioni" msprop:Generator_UserTableName="Prestazioni" msprop:Generator_RowDeletedName="PrestazioniRowDeleted" msprop:Generator_RowChangedName="PrestazioniRowChanged" msprop:Generator_RowClassName="PrestazioniRow" msprop:Generator_RowChangingName="PrestazioniRowChanging" msprop:Generator_RowEvArgName="PrestazioniRowChangeEvent" msprop:Generator_RowEvHandlerName="PrestazioniRowChangeEventHandler" msprop:Generator_TableClassName="PrestazioniDataTable" msprop:Generator_TableVarName="tablePrestazioni" msprop:Generator_RowDeletingName="PrestazioniRowDeleting" msprop:Generator_TablePropName="Prestazioni">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PRnumero" msprop:Generator_UserColumnName="PRnumero" msprop:Generator_ColumnVarNameInTable="columnPRnumero" msprop:Generator_ColumnPropNameInRow="PRnumero" msprop:Generator_ColumnPropNameInTable="PRnumeroColumn" type="xs:short" />
+              <xs:element name="PRdatainizio" msprop:Generator_UserColumnName="PRdatainizio" msprop:Generator_ColumnVarNameInTable="columnPRdatainizio" msprop:Generator_ColumnPropNameInRow="PRdatainizio" msprop:Generator_ColumnPropNameInTable="PRdatainizioColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRdatafine" msprop:Generator_UserColumnName="PRdatafine" msprop:Generator_ColumnVarNameInTable="columnPRdatafine" msprop:Generator_ColumnPropNameInRow="PRdatafine" msprop:Generator_ColumnPropNameInTable="PRdatafineColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRcliente" msprop:Generator_UserColumnName="PRcliente" msprop:Generator_ColumnVarNameInTable="columnPRcliente" msprop:Generator_ColumnPropNameInRow="PRcliente" msprop:Generator_ColumnPropNameInTable="PRclienteColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PRcategoria" msprop:Generator_UserColumnName="PRcategoria" msprop:Generator_ColumnVarNameInTable="columnPRcategoria" msprop:Generator_ColumnPropNameInRow="PRcategoria" msprop:Generator_ColumnPropNameInTable="PRcategoriaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRtipodiritti" msprop:Generator_UserColumnName="PRtipodiritti" msprop:Generator_ColumnVarNameInTable="columnPRtipodiritti" msprop:Generator_ColumnPropNameInRow="PRtipodiritti" msprop:Generator_ColumnPropNameInTable="PRtipodirittiColumn" type="xs:float" minOccurs="0" />
+              <xs:element name="PRtotale" msprop:Generator_UserColumnName="PRtotale" msprop:Generator_ColumnVarNameInTable="columnPRtotale" msprop:Generator_ColumnPropNameInRow="PRtotale" msprop:Generator_ColumnPropNameInTable="PRtotaleColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRdiritti" msprop:Generator_UserColumnName="PRdiritti" msprop:Generator_ColumnVarNameInTable="columnPRdiritti" msprop:Generator_ColumnPropNameInRow="PRdiritti" msprop:Generator_ColumnPropNameInTable="PRdirittiColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRanticipi" msprop:Generator_UserColumnName="PRanticipi" msprop:Generator_ColumnVarNameInTable="columnPRanticipi" msprop:Generator_ColumnPropNameInRow="PRanticipi" msprop:Generator_ColumnPropNameInTable="PRanticipiColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRtrattenute" msprop:Generator_UserColumnName="PRtrattenute" msprop:Generator_ColumnVarNameInTable="columnPRtrattenute" msprop:Generator_ColumnPropNameInRow="PRtrattenute" msprop:Generator_ColumnPropNameInTable="PRtrattenuteColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRfattura" msprop:Generator_UserColumnName="PRfattura" msprop:Generator_ColumnVarNameInTable="columnPRfattura" msprop:Generator_ColumnPropNameInRow="PRfattura" msprop:Generator_ColumnPropNameInTable="PRfatturaColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="PRfatturato" msprop:Generator_UserColumnName="PRfatturato" msprop:Generator_ColumnVarNameInTable="columnPRfatturato" msprop:Generator_ColumnPropNameInRow="PRfatturato" msprop:Generator_ColumnPropNameInTable="PRfatturatoColumn" type="xs:boolean" />
+              <xs:element name="PRfatturare" msprop:Generator_UserColumnName="PRfatturare" msprop:Generator_ColumnVarNameInTable="columnPRfatturare" msprop:Generator_ColumnPropNameInRow="PRfatturare" msprop:Generator_ColumnPropNameInTable="PRfatturareColumn" type="xs:boolean" />
+              <xs:element name="PRdatafattura" msprop:Generator_UserColumnName="PRdatafattura" msprop:Generator_ColumnVarNameInTable="columnPRdatafattura" msprop:Generator_ColumnPropNameInRow="PRdatafattura" msprop:Generator_ColumnPropNameInTable="PRdatafatturaColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PRnumerogiorni" msprop:Generator_UserColumnName="PRnumerogiorni" msprop:Generator_ColumnVarNameInTable="columnPRnumerogiorni" msprop:Generator_ColumnPropNameInRow="PRnumerogiorni" msprop:Generator_ColumnPropNameInTable="PRnumerogiorniColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PRutilizzo" msprop:Generator_UserColumnName="PRutilizzo" msprop:Generator_ColumnVarNameInTable="columnPRutilizzo" msprop:Generator_ColumnPropNameInRow="PRutilizzo" msprop:Generator_ColumnPropNameInTable="PRutilizzoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRcitinfat" msprop:Generator_UserColumnName="PRcitinfat" msprop:Generator_ColumnVarNameInTable="columnPRcitinfat" msprop:Generator_ColumnPropNameInRow="PRcitinfat" msprop:Generator_ColumnPropNameInTable="PRcitinfatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRspedirea" msprop:Generator_UserColumnName="PRspedirea" msprop:Generator_ColumnVarNameInTable="columnPRspedirea" msprop:Generator_ColumnPropNameInRow="PRspedirea" msprop:Generator_ColumnPropNameInTable="PRspedireaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRbuonoordine" msprop:Generator_UserColumnName="PRbuonoordine" msprop:Generator_ColumnVarNameInTable="columnPRbuonoordine" msprop:Generator_ColumnPropNameInRow="PRbuonoordine" msprop:Generator_ColumnPropNameInTable="PRbuonoordineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRspese" msprop:Generator_UserColumnName="PRspese" msprop:Generator_ColumnVarNameInTable="columnPRspese" msprop:Generator_ColumnPropNameInRow="PRspese" msprop:Generator_ColumnPropNameInTable="PRspeseColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRivaspese" msprop:Generator_UserColumnName="PRivaspese" msprop:Generator_ColumnVarNameInTable="columnPRivaspese" msprop:Generator_ColumnPropNameInRow="PRivaspese" msprop:Generator_ColumnPropNameInTable="PRivaspeseColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRrivalsa" msprop:Generator_UserColumnName="PRrivalsa" msprop:Generator_ColumnVarNameInTable="columnPRrivalsa" msprop:Generator_ColumnPropNameInRow="PRrivalsa" msprop:Generator_ColumnPropNameInTable="PRrivalsaColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRnote" msprop:Generator_UserColumnName="PRnote" msprop:Generator_ColumnVarNameInTable="columnPRnote" msprop:Generator_ColumnPropNameInRow="PRnote" msprop:Generator_ColumnPropNameInTable="PRnoteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRcondpag" msprop:Generator_UserColumnName="PRcondpag" msprop:Generator_ColumnVarNameInTable="columnPRcondpag" msprop:Generator_ColumnPropNameInRow="PRcondpag" msprop:Generator_ColumnPropNameInTable="PRcondpagColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRrivalsaSN" msprop:Generator_UserColumnName="PRrivalsaSN" msprop:Generator_ColumnVarNameInTable="columnPRrivalsaSN" msprop:Generator_ColumnPropNameInRow="PRrivalsaSN" msprop:Generator_ColumnPropNameInTable="PRrivalsaSNColumn" type="xs:boolean" />
+              <xs:element name="PRIVASN" msprop:Generator_UserColumnName="PRIVASN" msprop:Generator_ColumnVarNameInTable="columnPRIVASN" msprop:Generator_ColumnPropNameInRow="PRIVASN" msprop:Generator_ColumnPropNameInTable="PRIVASNColumn" type="xs:boolean" />
+              <xs:element name="PRgiorni" msprop:Generator_UserColumnName="PRgiorni" msprop:Generator_ColumnVarNameInTable="columnPRgiorni" msprop:Generator_ColumnPropNameInRow="PRgiorni" msprop:Generator_ColumnPropNameInTable="PRgiorniColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRtotalefattura" msprop:Generator_UserColumnName="PRtotalefattura" msprop:Generator_ColumnVarNameInTable="columnPRtotalefattura" msprop:Generator_ColumnPropNameInRow="PRtotalefattura" msprop:Generator_ColumnPropNameInTable="PRtotalefatturaColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRpagata" msprop:Generator_UserColumnName="PRpagata" msprop:Generator_ColumnVarNameInTable="columnPRpagata" msprop:Generator_ColumnPropNameInRow="PRpagata" msprop:Generator_ColumnPropNameInTable="PRpagataColumn" type="xs:boolean" />
+              <xs:element name="PRchiave" msprop:Generator_UserColumnName="PRchiave" msprop:Generator_ColumnVarNameInTable="columnPRchiave" msprop:Generator_ColumnPropNameInRow="PRchiave" msprop:Generator_ColumnPropNameInTable="PRchiaveColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRdescSpese" msprop:Generator_UserColumnName="PRdescSpese" msprop:Generator_ColumnVarNameInTable="columnPRdescSpese" msprop:Generator_ColumnPropNameInRow="PRdescSpese" msprop:Generator_ColumnPropNameInTable="PRdescSpeseColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRspese1" msprop:Generator_UserColumnName="PRspese1" msprop:Generator_ColumnVarNameInTable="columnPRspese1" msprop:Generator_ColumnPropNameInRow="PRspese1" msprop:Generator_ColumnPropNameInTable="PRspese1Column" type="xs:double" minOccurs="0" />
+              <xs:element name="PRdescSpese1" msprop:Generator_UserColumnName="PRdescSpese1" msprop:Generator_ColumnVarNameInTable="columnPRdescSpese1" msprop:Generator_ColumnPropNameInRow="PRdescSpese1" msprop:Generator_ColumnPropNameInTable="PRdescSpese1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRspese2" msprop:Generator_UserColumnName="PRspese2" msprop:Generator_ColumnVarNameInTable="columnPRspese2" msprop:Generator_ColumnPropNameInRow="PRspese2" msprop:Generator_ColumnPropNameInTable="PRspese2Column" type="xs:double" minOccurs="0" />
+              <xs:element name="PRdescSpese2" msprop:Generator_UserColumnName="PRdescSpese2" msprop:Generator_ColumnVarNameInTable="columnPRdescSpese2" msprop:Generator_ColumnPropNameInRow="PRdescSpese2" msprop:Generator_ColumnPropNameInTable="PRdescSpese2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRmemo" msprop:Generator_UserColumnName="PRmemo" msprop:Generator_ColumnVarNameInTable="columnPRmemo" msprop:Generator_ColumnPropNameInRow="PRmemo" msprop:Generator_ColumnPropNameInTable="PRmemoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRImponibile" msprop:Generator_UserColumnName="PRImponibile" msprop:Generator_ColumnVarNameInTable="columnPRImponibile" msprop:Generator_ColumnPropNameInRow="PRImponibile" msprop:Generator_ColumnPropNameInTable="PRImponibileColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRpctIVA" msprop:Generator_UserColumnName="PRpctIVA" msprop:Generator_ColumnVarNameInTable="columnPRpctIVA" msprop:Generator_ColumnPropNameInRow="PRpctIVA" msprop:Generator_ColumnPropNameInTable="PRpctIVAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRimportoIVA" msprop:Generator_UserColumnName="PRimportoIVA" msprop:Generator_ColumnVarNameInTable="columnPRimportoIVA" msprop:Generator_ColumnPropNameInRow="PRimportoIVA" msprop:Generator_ColumnPropNameInTable="PRimportoIVAColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="PRannoDoc" msprop:Generator_UserColumnName="PRannoDoc" msprop:Generator_ColumnVarNameInTable="columnPRannoDoc" msprop:Generator_ColumnPropNameInRow="PRannoDoc" msprop:Generator_ColumnPropNameInTable="PRannoDocColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="PRlingua" msprop:Generator_UserColumnName="PRlingua" msprop:Generator_ColumnVarNameInTable="columnPRlingua" msprop:Generator_ColumnPropNameInRow="PRlingua" msprop:Generator_ColumnPropNameInTable="PRlinguaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRvaluta" msprop:Generator_UserColumnName="PRvaluta" msprop:Generator_ColumnVarNameInTable="columnPRvaluta" msprop:Generator_ColumnPropNameInRow="PRvaluta" msprop:Generator_ColumnPropNameInTable="PRvalutaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRovertime" msprop:Generator_UserColumnName="PRovertime" msprop:Generator_ColumnVarNameInTable="columnPRovertime" msprop:Generator_ColumnPropNameInRow="PRovertime" msprop:Generator_ColumnPropNameInTable="PRovertimeColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Clienti">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Clicodice" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Cliprenome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliindirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clilocalita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cliprovincia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="CliRedazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clipostaragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClipostaIndirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clipostalocalita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clipostaprov" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClipostaCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="Clitelefono" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clifax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliIVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliCF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clipagamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliBanca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliPiazza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClipercIVA" type="xs:float" minOccurs="0" />
+              <xs:element name="Clipercdiritti" type="xs:float" minOccurs="0" />
+              <xs:element name="CliprenomeSN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Clicodfor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cligruppo" type="xs:int" minOccurs="0" />
+              <xs:element name="CliIBAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliLingua" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliValuta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClipostaNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliSWIFT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CliInUso" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Nomenclatura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TarTruccatore" type="xs:double" minOccurs="0" />
+              <xs:element name="TarParrucchiere" type="xs:double" minOccurs="0" />
+              <xs:element name="TarManicurista" type="xs:double" minOccurs="0" />
+              <xs:element name="TarGroomer" type="xs:double" minOccurs="0" />
+              <xs:element name="CliEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GAAttenzione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GACalcoloIVA" type="xs:boolean" minOccurs="0" />
+              <xs:element name="GANote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SchedaFornitore">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Forcodice" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Forprenome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forindirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forlocalita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forprovincia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="Forpostaragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpostaind" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpostaloc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForpostCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="Fortelef" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forfax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForIVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForCF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fordatanascita" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Forluogonascita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpagamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forbanca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPiazza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForpercIVA" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercritenuta" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercacconto" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercsuacconto" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc1" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc2" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc3" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc4" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc5" type="xs:short" minOccurs="0" />
+              <xs:element name="Foroperatore" type="xs:boolean" />
+              <xs:element name="Forperc6" type="xs:short" minOccurs="0" />
+              <xs:element name="Forcat1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForIBAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForEsenzioneIvaArt15" type="xs:boolean" />
+              <xs:element name="ForPctRivPrev" type="xs:float" minOccurs="0" />
+              <xs:element name="ForPagCodice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPostaNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPostaProv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForInUso" type="xs:boolean" />
+              <xs:element name="SRcodice" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="SRoperatore" type="xs:short" minOccurs="0" />
+              <xs:element name="SRcliente" type="xs:int" minOccurs="0" />
+              <xs:element name="SRcategoria" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRtiposervizio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRimporto" type="xs:double" minOccurs="0" />
+              <xs:element name="SRimponibile" type="xs:double" minOccurs="0" />
+              <xs:element name="SRdiritti" type="xs:double" minOccurs="0" />
+              <xs:element name="SRanticipi" type="xs:double" minOccurs="0" />
+              <xs:element name="SRtrattenute" type="xs:double" minOccurs="0" />
+              <xs:element name="SRfatturacli" type="xs:short" minOccurs="0" />
+              <xs:element name="SRfatturafor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRdatafatturacli" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRdatafatturafor" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRfatturare" type="xs:boolean" />
+              <xs:element name="SRfatturato" type="xs:boolean" />
+              <xs:element name="SRnumgiorni" type="xs:int" minOccurs="0" />
+              <xs:element name="SRnumeroprestazione" type="xs:int" minOccurs="0" />
+              <xs:element name="SRfatclianno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRanticipige" type="xs:double" minOccurs="0" />
+              <xs:element name="SRpagato" type="xs:boolean" />
+              <xs:element name="SRdatainizio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRdatafine" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRimportoLordo" type="xs:double" minOccurs="0" />
+              <xs:element name="SRpctDiritti" type="xs:double" minOccurs="0" />
+              <xs:element name="SRdescSpese" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRspese" type="xs:double" minOccurs="0" />
+              <xs:element name="SRspeseGA" type="xs:double" minOccurs="0" />
+              <xs:element name="SRdescSpese1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRspese1" type="xs:double" minOccurs="0" />
+              <xs:element name="SRspeseGA1" type="xs:double" minOccurs="0" />
+              <xs:element name="SRdescSpese2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRspese2" type="xs:double" minOccurs="0" />
+              <xs:element name="SRspeseGA2" type="xs:double" minOccurs="0" />
+              <xs:element name="SRAnnoFatt" type="xs:short" minOccurs="0" />
+              <xs:element name="SRMeseFatt" type="xs:short" minOccurs="0" />
+              <xs:element name="SResenzioneIvaArt15" type="xs:boolean" />
+              <xs:element name="SRpctRivPrev" type="xs:double" minOccurs="0" />
+              <xs:element name="SRpctIVA" type="xs:double" minOccurs="0" />
+              <xs:element name="SRpctRitAcc" type="xs:double" minOccurs="0" />
+              <xs:element name="SRimportoRedazionale" type="xs:double" minOccurs="0" />
+              <xs:element name="SRimportoOvertime" type="xs:double" minOccurs="0" />
+              <xs:element name="SRdescSpeseGA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRdescSpeseGA1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRdescSpeseGA2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SRimportoOvertimeGA" type="xs:double" minOccurs="0" />
+              <xs:element name="SRImportoGA" type="xs:double" minOccurs="0" />
+              <xs:element name="SRFornFatturare" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SRFornPagata" type="xs:boolean" minOccurs="0" />
+              <xs:element name="cliragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FATTURA" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="DATAFATTURA" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="DATAINIZIO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATAFINE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SRCompensoAggiunto" type="xs:double" minOccurs="0" />
+              <xs:element name="TIPO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CATEGORIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCNumeroCompleto" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="DCAnno" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="ForEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GACalcoloIVA" type="xs:boolean" minOccurs="0" />
+              <xs:element name="GANote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forperc0" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Documfornitori">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DFnumero">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFdata" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DFtipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFfornitore" type="xs:int" />
+              <xs:element name="DFpagamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFdatapagamento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DFpagata" type="xs:boolean" />
+              <xs:element name="DFimponibile" type="xs:double" minOccurs="0" />
+              <xs:element name="DFIVA" type="xs:double" minOccurs="0" />
+              <xs:element name="DFritenuta" type="xs:double" minOccurs="0" />
+              <xs:element name="DFspese" type="xs:double" minOccurs="0" />
+              <xs:element name="DFanticipo" type="xs:double" minOccurs="0" />
+              <xs:element name="DFtotale" type="xs:double" minOccurs="0" />
+              <xs:element name="DFdescfattura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFdescspese" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFnote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFbanca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFPiazza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DCBancagreenapple" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFrivprev" type="xs:double" minOccurs="0" />
+              <xs:element name="DFrivdesc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFesenzioneIvaArt15" type="xs:boolean" />
+              <xs:element name="DFspese1" type="xs:double" minOccurs="0" />
+              <xs:element name="DFdescspese1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFspese2" type="xs:double" minOccurs="0" />
+              <xs:element name="DFdescspese2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="70" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFpostaRagSoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFpostaInd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFpostaLoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFpostaProv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DFpostaCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="DFAnnoFatt" type="xs:short" minOccurs="0" />
+              <xs:element name="DFMeseFatt" type="xs:short" minOccurs="0" />
+              <xs:element name="DFimportoOvertime" type="xs:double" minOccurs="0" />
+              <xs:element name="DFimportoSfilate" type="xs:double" minOccurs="0" />
+              <xs:element name="DCid" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Forcodice" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" type="xs:int" />
+              <xs:element name="Forprenome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forindirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forlocalita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forprovincia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="Forpostaragsoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpostaind" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpostaloc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForpostCAP" type="xs:int" minOccurs="0" />
+              <xs:element name="Fortelef" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forfax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForIVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForCF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fordatanascita" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Forluogonascita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forpagamento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forbanca" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPiazza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForpercIVA" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercritenuta" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercacconto" type="xs:short" minOccurs="0" />
+              <xs:element name="Forpercsuacconto" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc1" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc2" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc3" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc4" type="xs:short" minOccurs="0" />
+              <xs:element name="Forperc5" type="xs:short" minOccurs="0" />
+              <xs:element name="Foroperatore" type="xs:boolean" />
+              <xs:element name="Forperc6" type="xs:short" minOccurs="0" />
+              <xs:element name="Forcat1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forcat6" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForIBAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForEsenzioneIvaArt15" type="xs:boolean" />
+              <xs:element name="ForPctRivPrev" type="xs:float" minOccurs="0" />
+              <xs:element name="ForPagCodice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPostaNazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForPostaProv" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ForInUso" type="xs:boolean" />
+              <xs:element name="DATA" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+              <xs:element name="ForEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GACalcoloIVA" type="xs:boolean" minOccurs="0" />
+              <xs:element name="GANote" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Forperc0" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Anagrafici">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RagSoc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Indirizzo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Localita" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CAP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nazione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIVA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AliquotaIVA" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Documclienti" />
+      <xs:field xpath="mstns:IdModalita" />
+    </xs:unique>
+    <xs:unique name="Clienti_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Clienti" />
+      <xs:field xpath="mstns:Clicodice" />
+    </xs:unique>
+    <xs:unique name="SchedaFornitore_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SchedaFornitore" />
+      <xs:field xpath="mstns:Forcodice" />
+    </xs:unique>
+    <xs:unique name="Documfornitori_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Documfornitori" />
+      <xs:field xpath="mstns:Forcodice" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

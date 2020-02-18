@@ -1,0 +1,366 @@
+﻿.menuItem
+{
+    border-top:1px solid #3A741D;   
+    border-bottom:2px solid #3A741D;     
+}
+
+.menuItemCoda
+{
+    border-top:1px solid #3A741D;   
+    border-bottom:2px solid #3A741D;     
+    background-color: #89C56B; 
+}
+
+
+.menuItem div
+{
+    width:150;
+}
+
+.menu
+{   
+    text-decoration:none;
+    display:block;
+    background-color: #89C56B; 
+    font-family:Verdana;
+    font-size:13px;
+    border-right:2px solid #3A741D;      
+    color:#FFFFFF;   
+    padding-left:5px;
+    cursor: pointer;
+}
+
+
+.menuHome a
+{
+    text-decoration:none;
+    display:block;
+    background-color: #89C56B;  
+    border-right:2px solid #3A741D;      
+    font-family:Verdana;
+    font-size:13px;
+    color:#FFFFFF;   
+    padding-left:5px;
+}
+
+.divItem
+{
+	border-bottom:1px solid #3A741D;     
+	border-left:1px solid #3A741D;   
+	border-right:1px solid #3A741D;       
+}
+
+.divItem a
+{   
+    text-decoration:none;
+    display:block;
+    background-color: #89C56B;    
+    font-family:Verdana;
+    font-size:11px;
+    color:#FFFFFF;   
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:3px;
+    border:1px solid #89C56B;     
+    border-bottom:1px solid #3A741D;                   
+}
+
+.divItem a:hover
+{
+    background-color: #3A741D;    
+}
+
+
+
+
+
+.webgridGeneral_Home
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	border-top:1px solid #999999;
+}
+
+.webgridGeneral_Home td
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:5px;
+	border-bottom:1px solid #999999;
+}
+
+.webgridGeneral_Print
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	margin-bottom:15px;
+	border-top:1px solid #999999;
+	border-right:1px solid #999999;
+}
+
+.webgridGeneral_Print td
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:6px;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #999999;
+}
+
+
+
+/* griglia generica*/
+.webgridGeneral
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	border:1px solid #999999;
+	text-align: left;
+}
+
+
+.webgridGeneral td
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	text-align: left;
+}
+
+.webgridGeneral_NoBorder
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	border:0px;
+	text-align: left;
+}
+
+.webgridHeaderStyleDefault
+{
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	height:25px;
+}
+
+.webgridPagerStyleDefault
+{
+	font-weight:bold;
+	color: #000000;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	height:20px;
+}
+
+.webgridRowStyleDefault
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #FEFEFE;
+	height:25px;
+	
+}
+
+.webgridRowStyleDefault td
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #FEFEFE;
+	height:25px;
+	
+}
+
+.webgridRowAlternateStyleDefault
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #EEEEEE;
+	height:25px;
+}
+
+.webgridRowAlternateStyleDefault td
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #EEEEEE;
+	height:25px;
+}
+
+
+
+.webgridSelectedRowStyleDefault
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #C9EFC9;
+	height:25px;	
+}
+
+.TDContiTOT_Col1
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+    font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	height:22px;
+}
+
+.TDContiTOT
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+    font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	border-left:1px solid #999999;
+	height:22px;
+}
+
+.TDConti_Col1
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+    font-weight:normal;
+	color: #000000;
+	background-color: #FEFEFE;
+	vertical-align: middle;
+	height:22px;
+}
+
+.TDConti
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+    font-weight:normal;
+	color: #000000;
+	background-color: #FEFEFE;
+	vertical-align: middle;
+	border-left:1px solid #999999;
+	height:22px;
+}
+
+.TDConti2
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+    font-weight:normal;
+	color: #000000;
+	background-color: #EEEEEE;
+	vertical-align: middle;
+	border-left:1px solid #999999;
+	height:22px;
+}
+
+.TDContiNew
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+    font-weight:normal;
+	color: #000000;
+	text-align:left;
+	background-color: #BAE8A3;
+	vertical-align: middle;
+	height:22px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+}
+
+.TDConti_Number
+{
+    text-align:right;
+}
+
+/* griglia Search*/
+.webgridGeneralSearch
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0px;
+	border:1px solid #999999;
+	text-align: left;
+}
+
+.webgridHeaderStyleDefaultSearch
+{
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	height:20px;
+}
+
+.webgridHeaderStyleDefaultSearch td
+{
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	height:20px;
+	border:0;
+}
+
+.webgridHeaderStyleDefaultSearch a
+{
+	font-weight:bold;
+	color: #FFFFFF;
+	background-color: #999999;
+	vertical-align: middle;
+	border:0;
+}
+
+.webgridPagerStyleDefaultSearch
+{
+	font-weight:bold;
+	color: #000000;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	height:20px;
+}
+
+.webgridRowStyleDefaultSearch
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #FEFEFE;
+	height:40px;
+	
+}
+
+.webgridRowAlternateStyleDefaultSearch
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #EEEEEE;
+	height:40px;
+}
+
+.webgridSelectedRowStyleDefaultSearch
+{
+	vertical-align: middle;
+	color: #000000;
+	background-color: #C9EFC9;
+	height:25px;
+}
+.webgridCustomPagerMessageStyleDefault
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color: #000000;
+	font-style: italic;
+	line-height: 25px;
+}
+.webgridCustomPagerStyleDefault
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color: #000000;
+	font-weight: bold;
+}

@@ -1,0 +1,2 @@
+NumeroFattura,FatturaNotaCredito,DataFattura,CodiceCliente,ImponibileLordo,ImportoIVA,Spese,Diritti,ImportoTotale,CategoriaServizio,TipoPagamento,Modificata
+1/15,FATTURA,05/01/2015 00:00:00,212,100,20,26,4,0,146,4,1,H,False

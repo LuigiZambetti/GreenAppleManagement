@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GREEN_SVILUPPOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Clienti' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Clienti">
+          <Key>
+            <PropertyRef Name="Clicodice" />
+          </Key>
+          <Property Name="Clicodice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cliprenome" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cliragsoc" Type="nvarchar" MaxLength="255" />
+          <Property Name="Cliindirizzo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Clilocalita" Type="nvarchar" MaxLength="255" />
+          <Property Name="Cliprovincia" Type="nvarchar" MaxLength="255" />
+          <Property Name="CliCAP" Type="nvarchar" MaxLength="50" />
+          <Property Name="CliRedazione" Type="nvarchar" MaxLength="255" />
+          <Property Name="Clipostaragsoc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClipostaIndirizzo" Type="nvarchar" MaxLength="255" />
+          <Property Name="Clipostalocalita" Type="nvarchar" MaxLength="255" />
+          <Property Name="Clipostaprov" Type="nvarchar" MaxLength="3" />
+          <Property Name="ClipostaCAP" Type="nvarchar" MaxLength="50" />
+          <Property Name="Clitelefono" Type="nvarchar" MaxLength="30" />
+          <Property Name="Clifax" Type="nvarchar" MaxLength="50" />
+          <Property Name="CliIVA" Type="nvarchar" MaxLength="50" />
+          <Property Name="CliCF" Type="nvarchar" MaxLength="50" />
+          <Property Name="Clipagamento" Type="nvarchar" MaxLength="5" />
+          <Property Name="CliBanca" Type="nvarchar" MaxLength="255" />
+          <Property Name="CliPiazza" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClipercIVA" Type="real" />
+          <Property Name="Clipercdiritti" Type="real" />
+          <Property Name="CliprenomeSN" Type="bit" />
+          <Property Name="Clicodfor" Type="nvarchar" MaxLength="10" />
+          <Property Name="cligruppo" Type="int" />
+          <Property Name="CliIBAN" Type="nvarchar" MaxLength="40" />
+          <Property Name="CliLingua" Type="nvarchar" MaxLength="5" />
+          <Property Name="CliValuta" Type="nvarchar" MaxLength="5" />
+          <Property Name="CliNazione" Type="nvarchar" MaxLength="255" />
+          <Property Name="ClipostaNazione" Type="nvarchar" MaxLength="50" />
+          <Property Name="CliSWIFT" Type="nvarchar" MaxLength="255" />
+          <Property Name="CliInUso" Type="bit" />
+          <Property Name="Nomenclatura" Type="nvarchar" MaxLength="50" />
+          <Property Name="TarTruccatore" Type="float" />
+          <Property Name="TarParrucchiere" Type="float" />
+          <Property Name="TarManicurista" Type="float" />
+          <Property Name="TarGroomer" Type="float" />
+          <Property Name="CliEMAIL" Type="nvarchar" MaxLength="255" />
+          <Property Name="GAAttenzione" Type="nvarchar" MaxLength="255" />
+          <Property Name="GACalcoloIVA" Type="bit" />
+          <Property Name="GANote" Type="nvarchar" MaxLength="4000" />
+          <Property Name="CliNumDicIntenti" Type="nvarchar" MaxLength="20" />
+          <Property Name="CliDataDicIntenti" Type="date" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Documclienti' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Documclienti">
+          <Key>
+            <PropertyRef Name="DCid" />
+            <PropertyRef Name="DCcliente" />
+          </Key>
+          <Property Name="DCid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DCnumero" Type="smallint" />
+          <Property Name="DCnumeroCompleto" Type="varchar" MaxLength="100" />
+          <Property Name="DCanno" Type="smallint" />
+          <Property Name="DCtipo" Type="nvarchar" MaxLength="25" />
+          <Property Name="DCdata" Type="datetime" />
+          <Property Name="DCcliente" Type="float" Nullable="false" />
+          <Property Name="DCimponibile" Type="float" />
+          <Property Name="DCspese" Type="float" />
+          <Property Name="DCdiritti" Type="float" />
+          <Property Name="DCIVA" Type="float" />
+          <Property Name="DCtotale" Type="float" />
+          <Property Name="DCdescfat" Type="ntext" />
+          <Property Name="DCdescspese" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCdatapag1" Type="datetime" />
+          <Property Name="DCdatapag2" Type="datetime" />
+          <Property Name="DCdatapag3" Type="datetime" />
+          <Property Name="DCpagato1" Type="nvarchar" MaxLength="2" />
+          <Property Name="DCpagato2" Type="nvarchar" MaxLength="2" />
+          <Property Name="DCpagato3" Type="nvarchar" MaxLength="2" />
+          <Property Name="DCanticipi" Type="float" />
+          <Property Name="DCdirittiop" Type="float" />
+          <Property Name="DCtrattenute" Type="float" />
+          <Property Name="DCBanca" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCPiazza" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCpercIVA" Type="int" />
+          <Property Name="DCpercdiritti" Type="int" />
+          <Property Name="DCpagam" Type="nvarchar" MaxLength="5" />
+          <Property Name="DCBancagreenapple" Type="nvarchar" MaxLength="60" />
+          <Property Name="DCbuonoOrdine" Type="nvarchar" MaxLength="50" />
+          <Property Name="DCpostaRagSoc" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCpostaIndirizzo" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCpostaLocalita" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCpostaProv" Type="nvarchar" MaxLength="255" />
+          <Property Name="DCpostaCAP" Type="nvarchar" MaxLength="10" />
+          <Property Name="DCnumeroPrestazione" Type="int" />
+          <Property Name="DCspese1" Type="float" />
+          <Property Name="DCdescspese1" Type="nvarchar" MaxLength="100" />
+          <Property Name="DCspese2" Type="float" />
+          <Property Name="DCdescspese2" Type="nvarchar" MaxLength="100" />
+          <Property Name="DCpostaNazione" Type="nvarchar" MaxLength="50" />
+          <Property Name="DClingua" Type="nvarchar" MaxLength="5" />
+          <Property Name="DCvaluta" Type="nvarchar" MaxLength="5" />
+          <Property Name="DCSWIFT" Type="nvarchar" MaxLength="255" />
+          <Property Name="Nomenclatura" Type="nvarchar" MaxLength="50" />
+          <Property Name="DCPagata" Type="bit" />
+          <Property Name="Cambio" Type="float" />
+          <Property Name="DCSconto" Type="float" />
+          <Property Name="DCScontato" Type="float" />
+          <Property Name="DCnoteCliente" Type="nvarchar" MaxLength="4000" />
+          <Property Name="CliDataDicIntenti" Type="date" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Lista_CategoriaServizi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lista_CategoriaServizi">
+          <Key>
+            <PropertyRef Name="CScodice" />
+          </Key>
+          <Property Name="CScodice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CSdescrizione" Type="nvarchar" MaxLength="255" />
+          <Property Name="Posizione" Type="int" />
+          <Property Name="PercCompenso" Type="float" />
+          <Property Name="FatturaRifferita" Type="bit" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Lista_PrestazioniTipi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lista_PrestazioniTipi">
+          <Key>
+            <PropertyRef Name="IdTipo" />
+          </Key>
+          <Property Name="IdTipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Descrizione" Type="nvarchar" MaxLength="255" />
+          <Property Name="Posizione" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Lista_Tiposervizio' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Lista_Tiposervizio">
+          <Key>
+            <PropertyRef Name="CScodice" />
+          </Key>
+          <Property Name="CScodice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CSdescrizione" Type="nvarchar" MaxLength="30" />
+          <Property Name="Posizione" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Prestazioni' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Prestazioni">
+          <Key>
+            <PropertyRef Name="PRnumero" />
+            <PropertyRef Name="PRfatturato" />
+            <PropertyRef Name="PRfatturare" />
+            <PropertyRef Name="PRrivalsaSN" />
+            <PropertyRef Name="PRIVASN" />
+            <PropertyRef Name="PRpagata" />
+          </Key>
+          <Property Name="PRnumero" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRdatainizio" Type="datetime" />
+          <Property Name="PRdatafine" Type="datetime" />
+          <Property Name="PRcliente" Type="int" />
+          <Property Name="PRcategoria" Type="nvarchar" MaxLength="5" />
+          <Property Name="PRtipodiritti" Type="real" />
+          <Property Name="PRtotale" Type="float" />
+          <Property Name="PRdiritti" Type="float" />
+          <Property Name="PRanticipi" Type="float" />
+          <Property Name="PRtrattenute" Type="float" />
+          <Property Name="PRfattura" Type="smallint" />
+          <Property Name="PRfatturato" Type="bit" Nullable="false" />
+          <Property Name="PRfatturare" Type="bit" Nullable="false" />
+          <Property Name="PRdatafattura" Type="datetime" />
+          <Property Name="PRnumerogiorni" Type="int" />
+          <Property Name="PRutilizzo" Type="nvarchar" MaxLength="100" />
+          <Property Name="PRcitinfat" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRspedirea" Type="nvarchar" MaxLength="80" />
+          <Property Name="PRbuonoordine" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRspese" Type="float" />
+          <Property Name="PRivaspese" Type="float" />
+          <Property Name="PRrivalsa" Type="float" />
+          <Property Name="PRnote" Type="ntext" />
+          <Property Name="PRcondpag" Type="nvarchar" MaxLength="5" />
+          <Property Name="PRrivalsaSN" Type="bit" Nullable="false" />
+          <Property Name="PRIVASN" Type="bit" Nullable="false" />
+          <Property Name="PRgiorni" Type="float" />
+          <Property Name="PRtotalefattura" Type="float" />
+          <Property Name="PRpagata" Type="bit" Nullable="false" />
+          <Property Name="PRchiave" Type="nvarchar" MaxLength="30" />
+          <Property Name="PRdescSpese" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRspese1" Type="float" />
+          <Property Name="PRdescSpese1" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRspese2" Type="float" />
+          <Property Name="PRdescSpese2" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRmemo" Type="ntext" />
+          <Property Name="PRImponibile" Type="float" />
+          <Property Name="PRpctIVA" Type="float" />
+          <Property Name="PRimportoIVA" Type="float" />
+          <Property Name="PRannoDoc" Type="smallint" />
+          <Property Name="PRlingua" Type="nvarchar" MaxLength="5" />
+          <Property Name="PRvaluta" Type="nvarchar" MaxLength="5" />
+          <Property Name="PRovertime" Type="float" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GREEN_SVILUPPO.dbo.Servizi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Servizi">
+          <Key>
+            <PropertyRef Name="SRcodice" />
+            <PropertyRef Name="SRfatturare" />
+            <PropertyRef Name="SRfatturato" />
+            <PropertyRef Name="SRpagato" />
+            <PropertyRef Name="SResenzioneIvaArt15" />
+          </Key>
+          <Property Name="SRcodice" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SRoperatore" Type="smallint" />
+          <Property Name="SRcliente" Type="int" />
+          <Property Name="SRcategoria" Type="nvarchar" MaxLength="20" />
+          <Property Name="SRtiposervizio" Type="nvarchar" MaxLength="5" />
+          <Property Name="SRimporto" Type="float" />
+          <Property Name="SRimponibile" Type="float" />
+          <Property Name="SRdiritti" Type="float" />
+          <Property Name="SRanticipi" Type="float" />
+          <Property Name="SRtrattenute" Type="float" />
+          <Property Name="SRfatturacli" Type="smallint" />
+          <Property Name="SRfatturafor" Type="nvarchar" MaxLength="10" />
+          <Property Name="SRdatafatturacli" Type="datetime" />
+          <Property Name="SRdatafatturafor" Type="datetime" />
+          <Property Name="SRfatturare" Type="bit" Nullable="false" />
+          <Property Name="SRfatturato" Type="bit" Nullable="false" />
+          <Property Name="SRnumgiorni" Type="int" />
+          <Property Name="SRnumeroprestazione" Type="int" />
+          <Property Name="SRfatclianno" Type="nvarchar" MaxLength="50" />
+          <Property Name="SRanticipige" Type="float" />
+          <Property Name="SRpagato" Type="bit" Nullable="false" />
+          <Property Name="SRdatainizio" Type="datetime" />
+          <Property Name="SRdatafine" Type="datetime" />
+          <Property Name="SRimportoLordo" Type="float" />
+          <Property Name="SRpctDiritti" Type="float" />
+          <Property Name="SRdescSpese" Type="nvarchar" MaxLength="70" />
+          <Property Name="SRspese" Type="float" />
+          <Property Name="SRspeseGA" Type="float" />
+          <Property Name="SRdescSpese1" Type="nvarchar" MaxLength="70" />
+          <Property Name="SRspese1" Type="float" />
+          <Property Name="SRspeseGA1" Type="float" />
+          <Property Name="SRdescSpese2" Type="nvarchar" MaxLength="70" />
+          <Property Name="SRspese2" Type="float" />
+          <Property Name="SRspeseGA2" Type="float" />
+          <Property Name="SRAnnoFatt" Type="smallint" />
+          <Property Name="SRMeseFatt" Type="smallint" />
+          <Property Name="SResenzioneIvaArt15" Type="bit" Nullable="false" />
+          <Property Name="SRpctRivPrev" Type="float" />
+          <Property Name="SRpctIVA" Type="float" />
+          <Property Name="SRpctRitAcc" Type="float" />
+          <Property Name="SRimportoRedazionale" Type="float" />
+          <Property Name="SRimportoOvertime" Type="float" />
+          <Property Name="SRdescSpeseGA" Type="nvarchar" MaxLength="255" />
+          <Property Name="SRdescSpeseGA1" Type="nvarchar" MaxLength="255" />
+          <Property Name="SRdescSpeseGA2" Type="nvarchar" MaxLength="255" />
+          <Property Name="SRimportoOvertimeGA" Type="float" />
+          <Property Name="SRImportoGA" Type="float" />
+          <Property Name="SRCompensoAggiunto" Type="float" />
+        </EntityType>
+        <EntityContainer Name="GREEN_SVILUPPOModelStoreContainer">
+          <EntitySet Name="Clienti" EntityType="Self.Clienti" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Clienti].[Clicodice] AS [Clicodice], 
+    [Clienti].[Cliprenome] AS [Cliprenome], 
+    [Clienti].[Cliragsoc] AS [Cliragsoc], 
+    [Clienti].[Cliindirizzo] AS [Cliindirizzo], 
+    [Clienti].[Clilocalita] AS [Clilocalita], 
+    [Clienti].[Cliprovincia] AS [Cliprovincia], 
+    [Clienti].[CliCAP] AS [CliCAP], 
+    [Clienti].[CliRedazione] AS [CliRedazione], 
+    [Clienti].[Clipostaragsoc] AS [Clipostaragsoc], 
+    [Clienti].[ClipostaIndirizzo] AS [ClipostaIndirizzo], 
+    [Clienti].[Clipostalocalita] AS [Clipostalocalita], 
+    [Clienti].[Clipostaprov] AS [Clipostaprov], 
+    [Clienti].[ClipostaCAP] AS [ClipostaCAP], 
+    [Clienti].[Clitelefono] AS [Clitelefono], 
+    [Clienti].[Clifax] AS [Clifax], 
+    [Clienti].[CliIVA] AS [CliIVA], 
+    [Clienti].[CliCF] AS [CliCF], 
+    [Clienti].[Clipagamento] AS [Clipagamento], 
+    [Clienti].[CliBanca] AS [CliBanca], 
+    [Clienti].[CliPiazza] AS [CliPiazza], 
+    [Clienti].[ClipercIVA] AS [ClipercIVA], 
+    [Clienti].[Clipercdiritti] AS [Clipercdiritti], 
+    [Clienti].[CliprenomeSN] AS [CliprenomeSN], 
+    [Clienti].[Clicodfor] AS [Clicodfor], 
+    [Clienti].[cligruppo] AS [cligruppo], 
+    [Clienti].[CliIBAN] AS [CliIBAN], 
+    [Clienti].[CliLingua] AS [CliLingua], 
+    [Clienti].[CliValuta] AS [CliValuta], 
+    [Clienti].[CliNazione] AS [CliNazione], 
+    [Clienti].[ClipostaNazione] AS [ClipostaNazione], 
+    [Clienti].[CliSWIFT] AS [CliSWIFT], 
+    [Clienti].[CliInUso] AS [CliInUso], 
+    [Clienti].[Nomenclatura] AS [Nomenclatura], 
+    [Clienti].[TarTruccatore] AS [TarTruccatore], 
+    [Clienti].[TarParrucchiere] AS [TarParrucchiere], 
+    [Clienti].[TarManicurista] AS [TarManicurista], 
+    [Clienti].[TarGroomer] AS [TarGroomer], 
+    [Clienti].[CliEMAIL] AS [CliEMAIL], 
+    [Clienti].[GAAttenzione] AS [GAAttenzione], 
+    [Clienti].[GACalcoloIVA] AS [GACalcoloIVA], 
+    [Clienti].[GANote] AS [GANote], 
+    [Clienti].[CliNumDicIntenti] AS [CliNumDicIntenti], 
+    [Clienti].[CliDataDicIntenti] AS [CliDataDicIntenti]
+    FROM [dbo].[Clienti] AS [Clienti]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Documclienti" EntityType="Self.Documclienti" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Documclienti].[DCid] AS [DCid], 
+    [Documclienti].[DCnumero] AS [DCnumero], 
+    [Documclienti].[DCnumeroCompleto] AS [DCnumeroCompleto], 
+    [Documclienti].[DCanno] AS [DCanno], 
+    [Documclienti].[DCtipo] AS [DCtipo], 
+    [Documclienti].[DCdata] AS [DCdata], 
+    [Documclienti].[DCcliente] AS [DCcliente], 
+    [Documclienti].[DCimponibile] AS [DCimponibile], 
+    [Documclienti].[DCspese] AS [DCspese], 
+    [Documclienti].[DCdiritti] AS [DCdiritti], 
+    [Documclienti].[DCIVA] AS [DCIVA], 
+    [Documclienti].[DCtotale] AS [DCtotale], 
+    [Documclienti].[DCdescfat] AS [DCdescfat], 
+    [Documclienti].[DCdescspese] AS [DCdescspese], 
+    [Documclienti].[DCdatapag1] AS [DCdatapag1], 
+    [Documclienti].[DCdatapag2] AS [DCdatapag2], 
+    [Documclienti].[DCdatapag3] AS [DCdatapag3], 
+    [Documclienti].[DCpagato1] AS [DCpagato1], 
+    [Documclienti].[DCpagato2] AS [DCpagato2], 
+    [Documclienti].[DCpagato3] AS [DCpagato3], 
+    [Documclienti].[DCanticipi] AS [DCanticipi], 
+    [Documclienti].[DCdirittiop] AS [DCdirittiop], 
+    [Documclienti].[DCtrattenute] AS [DCtrattenute], 
+    [Documclienti].[DCBanca] AS [DCBanca], 
+    [Documclienti].[DCPiazza] AS [DCPiazza], 
+    [Documclienti].[DCpercIVA] AS [DCpercIVA], 
+    [Documclienti].[DCpercdiritti] AS [DCpercdiritti], 
+    [Documclienti].[DCpagam] AS [DCpagam], 
+    [Documclienti].[DCBancagreenapple] AS [DCBancagreenapple], 
+    [Documclienti].[DCbuonoOrdine] AS [DCbuonoOrdine], 
+    [Documclienti].[DCpostaRagSoc] AS [DCpostaRagSoc], 
+    [Documclienti].[DCpostaIndirizzo] AS [DCpostaIndirizzo], 
+    [Documclienti].[DCpostaLocalita] AS [DCpostaLocalita], 
+    [Documclienti].[DCpostaProv] AS [DCpostaProv], 
+    [Documclienti].[DCpostaCAP] AS [DCpostaCAP], 
+    [Documclienti].[DCnumeroPrestazione] AS [DCnumeroPrestazione], 
+    [Documclienti].[DCspese1] AS [DCspese1], 
+    [Documclienti].[DCdescspese1] AS [DCdescspese1], 
+    [Documclienti].[DCspese2] AS [DCspese2], 
+    [Documclienti].[DCdescspese2] AS [DCdescspese2], 
+    [Documclienti].[DCpostaNazione] AS [DCpostaNazione], 
+    [Documclienti].[DClingua] AS [DClingua], 
+    [Documclienti].[DCvaluta] AS [DCvaluta], 
+    [Documclienti].[DCSWIFT] AS [DCSWIFT], 
+    [Documclienti].[Nomenclatura] AS [Nomenclatura], 
+    [Documclienti].[DCPagata] AS [DCPagata], 
+    [Documclienti].[Cambio] AS [Cambio], 
+    [Documclienti].[DCSconto] AS [DCSconto], 
+    [Documclienti].[DCScontato] AS [DCScontato], 
+    [Documclienti].[DCnoteCliente] AS [DCnoteCliente], 
+    [Documclienti].[CliDataDicIntenti] AS [CliDataDicIntenti]
+    FROM [dbo].[Documclienti] AS [Documclienti]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lista_CategoriaServizi" EntityType="Self.Lista_CategoriaServizi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lista_CategoriaServizi].[CScodice] AS [CScodice], 
+    [Lista_CategoriaServizi].[CSdescrizione] AS [CSdescrizione], 
+    [Lista_CategoriaServizi].[Posizione] AS [Posizione], 
+    [Lista_CategoriaServizi].[PercCompenso] AS [PercCompenso], 
+    [Lista_CategoriaServizi].[FatturaRifferita] AS [FatturaRifferita]
+    FROM [dbo].[Lista_CategoriaServizi] AS [Lista_CategoriaServizi]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lista_PrestazioniTipi" EntityType="Self.Lista_PrestazioniTipi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lista_PrestazioniTipi].[IdTipo] AS [IdTipo], 
+    [Lista_PrestazioniTipi].[Descrizione] AS [Descrizione], 
+    [Lista_PrestazioniTipi].[Posizione] AS [Posizione]
+    FROM [dbo].[Lista_PrestazioniTipi] AS [Lista_PrestazioniTipi]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Lista_Tiposervizio" EntityType="Self.Lista_Tiposervizio" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Lista_Tiposervizio].[CScodice] AS [CScodice], 
+    [Lista_Tiposervizio].[CSdescrizione] AS [CSdescrizione], 
+    [Lista_Tiposervizio].[Posizione] AS [Posizione]
+    FROM [dbo].[Lista_Tiposervizio] AS [Lista_Tiposervizio]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Prestazioni" EntityType="Self.Prestazioni" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Prestazioni].[PRnumero] AS [PRnumero], 
+    [Prestazioni].[PRdatainizio] AS [PRdatainizio], 
+    [Prestazioni].[PRdatafine] AS [PRdatafine], 
+    [Prestazioni].[PRcliente] AS [PRcliente], 
+    [Prestazioni].[PRcategoria] AS [PRcategoria], 
+    [Prestazioni].[PRtipodiritti] AS [PRtipodiritti], 
+    [Prestazioni].[PRtotale] AS [PRtotale], 
+    [Prestazioni].[PRdiritti] AS [PRdiritti], 
+    [Prestazioni].[PRanticipi] AS [PRanticipi], 
+    [Prestazioni].[PRtrattenute] AS [PRtrattenute], 
+    [Prestazioni].[PRfattura] AS [PRfattura], 
+    [Prestazioni].[PRfatturato] AS [PRfatturato], 
+    [Prestazioni].[PRfatturare] AS [PRfatturare], 
+    [Prestazioni].[PRdatafattura] AS [PRdatafattura], 
+    [Prestazioni].[PRnumerogiorni] AS [PRnumerogiorni], 
+    [Prestazioni].[PRutilizzo] AS [PRutilizzo], 
+    [Prestazioni].[PRcitinfat] AS [PRcitinfat], 
+    [Prestazioni].[PRspedirea] AS [PRspedirea], 
+    [Prestazioni].[PRbuonoordine] AS [PRbuonoordine], 
+    [Prestazioni].[PRspese] AS [PRspese], 
+    [Prestazioni].[PRivaspese] AS [PRivaspese], 
+    [Prestazioni].[PRrivalsa] AS [PRrivalsa], 
+    [Prestazioni].[PRnote] AS [PRnote], 
+    [Prestazioni].[PRcondpag] AS [PRcondpag], 
+    [Prestazioni].[PRrivalsaSN] AS [PRrivalsaSN], 
+    [Prestazioni].[PRIVASN] AS [PRIVASN], 
+    [Prestazioni].[PRgiorni] AS [PRgiorni], 
+    [Prestazioni].[PRtotalefattura] AS [PRtotalefattura], 
+    [Prestazioni].[PRpagata] AS [PRpagata], 
+    [Prestazioni].[PRchiave] AS [PRchiave], 
+    [Prestazioni].[PRdescSpese] AS [PRdescSpese], 
+    [Prestazioni].[PRspese1] AS [PRspese1], 
+    [Prestazioni].[PRdescSpese1] AS [PRdescSpese1], 
+    [Prestazioni].[PRspese2] AS [PRspese2], 
+    [Prestazioni].[PRdescSpese2] AS [PRdescSpese2], 
+    [Prestazioni].[PRmemo] AS [PRmemo], 
+    [Prestazioni].[PRImponibile] AS [PRImponibile], 
+    [Prestazioni].[PRpctIVA] AS [PRpctIVA], 
+    [Prestazioni].[PRimportoIVA] AS [PRimportoIVA], 
+    [Prestazioni].[PRannoDoc] AS [PRannoDoc], 
+    [Prestazioni].[PRlingua] AS [PRlingua], 
+    [Prestazioni].[PRvaluta] AS [PRvaluta], 
+    [Prestazioni].[PRovertime] AS [PRovertime]
+    FROM [dbo].[Prestazioni] AS [Prestazioni]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Servizi" EntityType="Self.Servizi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Servizi].[SRcodice] AS [SRcodice], 
+    [Servizi].[SRoperatore] AS [SRoperatore], 
+    [Servizi].[SRcliente] AS [SRcliente], 
+    [Servizi].[SRcategoria] AS [SRcategoria], 
+    [Servizi].[SRtiposervizio] AS [SRtiposervizio], 
+    [Servizi].[SRimporto] AS [SRimporto], 
+    [Servizi].[SRimponibile] AS [SRimponibile], 
+    [Servizi].[SRdiritti] AS [SRdiritti], 
+    [Servizi].[SRanticipi] AS [SRanticipi], 
+    [Servizi].[SRtrattenute] AS [SRtrattenute], 
+    [Servizi].[SRfatturacli] AS [SRfatturacli], 
+    [Servizi].[SRfatturafor] AS [SRfatturafor], 
+    [Servizi].[SRdatafatturacli] AS [SRdatafatturacli], 
+    [Servizi].[SRdatafatturafor] AS [SRdatafatturafor], 
+    [Servizi].[SRfatturare] AS [SRfatturare], 
+    [Servizi].[SRfatturato] AS [SRfatturato], 
+    [Servizi].[SRnumgiorni] AS [SRnumgiorni], 
+    [Servizi].[SRnumeroprestazione] AS [SRnumeroprestazione], 
+    [Servizi].[SRfatclianno] AS [SRfatclianno], 
+    [Servizi].[SRanticipige] AS [SRanticipige], 
+    [Servizi].[SRpagato] AS [SRpagato], 
+    [Servizi].[SRdatainizio] AS [SRdatainizio], 
+    [Servizi].[SRdatafine] AS [SRdatafine], 
+    [Servizi].[SRimportoLordo] AS [SRimportoLordo], 
+    [Servizi].[SRpctDiritti] AS [SRpctDiritti], 
+    [Servizi].[SRdescSpese] AS [SRdescSpese], 
+    [Servizi].[SRspese] AS [SRspese], 
+    [Servizi].[SRspeseGA] AS [SRspeseGA], 
+    [Servizi].[SRdescSpese1] AS [SRdescSpese1], 
+    [Servizi].[SRspese1] AS [SRspese1], 
+    [Servizi].[SRspeseGA1] AS [SRspeseGA1], 
+    [Servizi].[SRdescSpese2] AS [SRdescSpese2], 
+    [Servizi].[SRspese2] AS [SRspese2], 
+    [Servizi].[SRspeseGA2] AS [SRspeseGA2], 
+    [Servizi].[SRAnnoFatt] AS [SRAnnoFatt], 
+    [Servizi].[SRMeseFatt] AS [SRMeseFatt], 
+    [Servizi].[SResenzioneIvaArt15] AS [SResenzioneIvaArt15], 
+    [Servizi].[SRpctRivPrev] AS [SRpctRivPrev], 
+    [Servizi].[SRpctIVA] AS [SRpctIVA], 
+    [Servizi].[SRpctRitAcc] AS [SRpctRitAcc], 
+    [Servizi].[SRimportoRedazionale] AS [SRimportoRedazionale], 
+    [Servizi].[SRimportoOvertime] AS [SRimportoOvertime], 
+    [Servizi].[SRdescSpeseGA] AS [SRdescSpeseGA], 
+    [Servizi].[SRdescSpeseGA1] AS [SRdescSpeseGA1], 
+    [Servizi].[SRdescSpeseGA2] AS [SRdescSpeseGA2], 
+    [Servizi].[SRimportoOvertimeGA] AS [SRimportoOvertimeGA], 
+    [Servizi].[SRImportoGA] AS [SRImportoGA], 
+    [Servizi].[SRCompensoAggiunto] AS [SRCompensoAggiunto]
+    FROM [dbo].[Servizi] AS [Servizi]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GREEN_SVILUPPOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clienti">
+          <Key>
+            <PropertyRef Name="Clicodice" />
+          </Key>
+          <Property Name="Clicodice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cliprenome" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cliragsoc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Cliindirizzo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Clilocalita" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Cliprovincia" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CliCAP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CliRedazione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Clipostaragsoc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ClipostaIndirizzo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Clipostalocalita" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Clipostaprov" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+          <Property Name="ClipostaCAP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Clitelefono" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Clifax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CliIVA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CliCF" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Clipagamento" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CliBanca" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CliPiazza" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ClipercIVA" Type="Single" />
+          <Property Name="Clipercdiritti" Type="Single" />
+          <Property Name="CliprenomeSN" Type="Boolean" />
+          <Property Name="Clicodfor" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="cligruppo" Type="Int32" />
+          <Property Name="CliIBAN" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="CliLingua" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CliValuta" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="CliNazione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ClipostaNazione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CliSWIFT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CliInUso" Type="Boolean" />
+          <Property Name="Nomenclatura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TarTruccatore" Type="Double" />
+          <Property Name="TarParrucchiere" Type="Double" />
+          <Property Name="TarManicurista" Type="Double" />
+          <Property Name="TarGroomer" Type="Double" />
+          <Property Name="CliEMAIL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="GAAttenzione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="GACalcoloIVA" Type="Boolean" />
+          <Property Name="GANote" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="CliNumDicIntenti" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CliDataDicIntenti" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Documclienti">
+          <Key>
+            <PropertyRef Name="DCid" />
+            <PropertyRef Name="DCcliente" />
+          </Key>
+          <Property Name="DCid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DCnumero" Type="Int16" />
+          <Property Name="DCnumeroCompleto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DCanno" Type="Int16" />
+          <Property Name="DCtipo" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+          <Property Name="DCdata" Type="DateTime" Precision="3" />
+          <Property Name="DCcliente" Type="Double" Nullable="false" />
+          <Property Name="DCimponibile" Type="Double" />
+          <Property Name="DCspese" Type="Double" />
+          <Property Name="DCdiritti" Type="Double" />
+          <Property Name="DCIVA" Type="Double" />
+          <Property Name="DCtotale" Type="Double" />
+          <Property Name="DCdescfat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DCdescspese" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCdatapag1" Type="DateTime" Precision="3" />
+          <Property Name="DCdatapag2" Type="DateTime" Precision="3" />
+          <Property Name="DCdatapag3" Type="DateTime" Precision="3" />
+          <Property Name="DCpagato1" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="DCpagato2" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="DCpagato3" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <Property Name="DCanticipi" Type="Double" />
+          <Property Name="DCdirittiop" Type="Double" />
+          <Property Name="DCtrattenute" Type="Double" />
+          <Property Name="DCBanca" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCPiazza" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCpercIVA" Type="Int32" />
+          <Property Name="DCpercdiritti" Type="Int32" />
+          <Property Name="DCpagam" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DCBancagreenapple" Type="String" MaxLength="60" FixedLength="false" Unicode="true" />
+          <Property Name="DCbuonoOrdine" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaRagSoc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaIndirizzo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaLocalita" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaProv" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaCAP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="DCnumeroPrestazione" Type="Int32" />
+          <Property Name="DCspese1" Type="Double" />
+          <Property Name="DCdescspese1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DCspese2" Type="Double" />
+          <Property Name="DCdescspese2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DCpostaNazione" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DClingua" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DCvaluta" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="DCSWIFT" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Nomenclatura" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DCPagata" Type="Boolean" />
+          <Property Name="Cambio" Type="Double" />
+          <Property Name="DCSconto" Type="Double" />
+          <Property Name="DCScontato" Type="Double" />
+          <Property Name="DCnoteCliente" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Name="CliDataDicIntenti" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Prestazioni">
+          <Key>
+            <PropertyRef Name="PRnumero" />
+            <PropertyRef Name="PRfatturato" />
+            <PropertyRef Name="PRfatturare" />
+            <PropertyRef Name="PRrivalsaSN" />
+            <PropertyRef Name="PRIVASN" />
+            <PropertyRef Name="PRpagata" />
+          </Key>
+          <Property Name="PRnumero" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRdatainizio" Type="DateTime" Precision="3" />
+          <Property Name="PRdatafine" Type="DateTime" Precision="3" />
+          <Property Name="PRcliente" Type="Int32" />
+          <Property Name="PRcategoria" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PRtipodiritti" Type="Single" />
+          <Property Name="PRtotale" Type="Double" />
+          <Property Name="PRdiritti" Type="Double" />
+          <Property Name="PRanticipi" Type="Double" />
+          <Property Name="PRtrattenute" Type="Double" />
+          <Property Name="PRfattura" Type="Int16" />
+          <Property Name="PRfatturato" Type="Boolean" Nullable="false" />
+          <Property Name="PRfatturare" Type="Boolean" Nullable="false" />
+          <Property Name="PRdatafattura" Type="DateTime" Precision="3" />
+          <Property Name="PRnumerogiorni" Type="Int32" />
+          <Property Name="PRutilizzo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PRcitinfat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRspedirea" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PRbuonoordine" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRspese" Type="Double" />
+          <Property Name="PRivaspese" Type="Double" />
+          <Property Name="PRrivalsa" Type="Double" />
+          <Property Name="PRnote" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PRcondpag" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PRrivalsaSN" Type="Boolean" Nullable="false" />
+          <Property Name="PRIVASN" Type="Boolean" Nullable="false" />
+          <Property Name="PRgiorni" Type="Double" />
+          <Property Name="PRtotalefattura" Type="Double" />
+          <Property Name="PRpagata" Type="Boolean" Nullable="false" />
+          <Property Name="PRchiave" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="PRdescSpese" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRspese1" Type="Double" />
+          <Property Name="PRdescSpese1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRspese2" Type="Double" />
+          <Property Name="PRdescSpese2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRmemo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PRImponibile" Type="Double" />
+          <Property Name="PRpctIVA" Type="Double" />
+          <Property Name="PRimportoIVA" Type="Double" />
+          <Property Name="PRannoDoc" Type="Int16" />
+          <Property Name="PRlingua" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PRvaluta" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="PRovertime" Type="Double" />
+        </EntityType>
+        <EntityType Name="Servizi">
+          <Key>
+            <PropertyRef Name="SRcodice" />
+            <PropertyRef Name="SRfatturare" />
+            <PropertyRef Name="SRfatturato" />
+            <PropertyRef Name="SRpagato" />
+            <PropertyRef Name="SResenzioneIvaArt15" />
+          </Key>
+          <Property Name="SRcodice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SRoperatore" Type="Int16" />
+          <Property Name="SRcliente" Type="Int32" />
+          <Property Name="SRcategoria" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="SRtiposervizio" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <Property Name="SRimporto" Type="Double" />
+          <Property Name="SRimponibile" Type="Double" />
+          <Property Name="SRdiritti" Type="Double" />
+          <Property Name="SRanticipi" Type="Double" />
+          <Property Name="SRtrattenute" Type="Double" />
+          <Property Name="SRfatturacli" Type="Int16" />
+          <Property Name="SRfatturafor" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="SRdatafatturacli" Type="DateTime" Precision="3" />
+          <Property Name="SRdatafatturafor" Type="DateTime" Precision="3" />
+          <Property Name="SRfatturare" Type="Boolean" Nullable="false" />
+          <Property Name="SRfatturato" Type="Boolean" Nullable="false" />
+          <Property Name="SRnumgiorni" Type="Int32" />
+          <Property Name="SRnumeroprestazione" Type="Int32" />
+          <Property Name="SRfatclianno" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SRanticipige" Type="Double" />
+          <Property Name="SRpagato" Type="Boolean" Nullable="false" />
+          <Property Name="SRdatainizio" Type="DateTime" Precision="3" />
+          <Property Name="SRdatafine" Type="DateTime" Precision="3" />
+          <Property Name="SRimportoLordo" Type="Double" />
+          <Property Name="SRpctDiritti" Type="Double" />
+          <Property Name="SRdescSpese" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="SRspese" Type="Double" />
+          <Property Name="SRspeseGA" Type="Double" />
+          <Property Name="SRdescSpese1" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="SRspese1" Type="Double" />
+          <Property Name="SRspeseGA1" Type="Double" />
+          <Property Name="SRdescSpese2" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="SRspese2" Type="Double" />
+          <Property Name="SRspeseGA2" Type="Double" />
+          <Property Name="SRAnnoFatt" Type="Int16" />
+          <Property Name="SRMeseFatt" Type="Int16" />
+          <Property Name="SResenzioneIvaArt15" Type="Boolean" Nullable="false" />
+          <Property Name="SRpctRivPrev" Type="Double" />
+          <Property Name="SRpctIVA" Type="Double" />
+          <Property Name="SRpctRitAcc" Type="Double" />
+          <Property Name="SRimportoRedazionale" Type="Double" />
+          <Property Name="SRimportoOvertime" Type="Double" />
+          <Property Name="SRdescSpeseGA" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SRdescSpeseGA1" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SRdescSpeseGA2" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="SRimportoOvertimeGA" Type="Double" />
+          <Property Name="SRImportoGA" Type="Double" />
+          <Property Name="SRCompensoAggiunto" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="GREEN_SVILUPPOEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clienti" EntityType="Self.Clienti" />
+          <EntitySet Name="Documclienti" EntityType="Self.Documclienti" />
+          <EntitySet Name="Prestazioni" EntityType="Self.Prestazioni" />
+          <EntitySet Name="Servizi" EntityType="Self.Servizi" />
+          <EntitySet Name="Lista_PrestazioniTipi" EntityType="GREEN_SVILUPPOModel.Lista_PrestazioniTipi" />
+          <EntitySet Name="Lista_CategoriaServizi" EntityType="GREEN_SVILUPPOModel.Lista_CategoriaServizi" />
+          <EntitySet Name="Lista_Tiposervizio" EntityType="GREEN_SVILUPPOModel.Lista_Tiposervizio" />
+        </EntityContainer>
+        <EntityType Name="Lista_PrestazioniTipi">
+          <Key>
+            <PropertyRef Name="IdTipo" />
+          </Key>
+          <Property Name="IdTipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Descrizione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Posizione" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Lista_CategoriaServizi">
+          <Key>
+            <PropertyRef Name="CScodice" />
+          </Key>
+          <Property Name="CScodice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CSdescrizione" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Posizione" Type="Int32" />
+          <Property Name="PercCompenso" Type="Double" />
+          <Property Name="FatturaRifferita" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Lista_Tiposervizio">
+          <Key>
+            <PropertyRef Name="CScodice" />
+          </Key>
+          <Property Name="CScodice" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CSdescrizione" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Posizione" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GREEN_SVILUPPOModelStoreContainer" CdmEntityContainer="GREEN_SVILUPPOEntities">
+          <EntitySetMapping Name="Clienti">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Clienti">
+              <MappingFragment StoreEntitySet="Clienti">
+                <ScalarProperty Name="Clicodice" ColumnName="Clicodice" />
+                <ScalarProperty Name="Cliprenome" ColumnName="Cliprenome" />
+                <ScalarProperty Name="Cliragsoc" ColumnName="Cliragsoc" />
+                <ScalarProperty Name="Cliindirizzo" ColumnName="Cliindirizzo" />
+                <ScalarProperty Name="Clilocalita" ColumnName="Clilocalita" />
+                <ScalarProperty Name="Cliprovincia" ColumnName="Cliprovincia" />
+                <ScalarProperty Name="CliCAP" ColumnName="CliCAP" />
+                <ScalarProperty Name="CliRedazione" ColumnName="CliRedazione" />
+                <ScalarProperty Name="Clipostaragsoc" ColumnName="Clipostaragsoc" />
+                <ScalarProperty Name="ClipostaIndirizzo" ColumnName="ClipostaIndirizzo" />
+                <ScalarProperty Name="Clipostalocalita" ColumnName="Clipostalocalita" />
+                <ScalarProperty Name="Clipostaprov" ColumnName="Clipostaprov" />
+                <ScalarProperty Name="ClipostaCAP" ColumnName="ClipostaCAP" />
+                <ScalarProperty Name="Clitelefono" ColumnName="Clitelefono" />
+                <ScalarProperty Name="Clifax" ColumnName="Clifax" />
+                <ScalarProperty Name="CliIVA" ColumnName="CliIVA" />
+                <ScalarProperty Name="CliCF" ColumnName="CliCF" />
+                <ScalarProperty Name="Clipagamento" ColumnName="Clipagamento" />
+                <ScalarProperty Name="CliBanca" ColumnName="CliBanca" />
+                <ScalarProperty Name="CliPiazza" ColumnName="CliPiazza" />
+                <ScalarProperty Name="ClipercIVA" ColumnName="ClipercIVA" />
+                <ScalarProperty Name="Clipercdiritti" ColumnName="Clipercdiritti" />
+                <ScalarProperty Name="CliprenomeSN" ColumnName="CliprenomeSN" />
+                <ScalarProperty Name="Clicodfor" ColumnName="Clicodfor" />
+                <ScalarProperty Name="cligruppo" ColumnName="cligruppo" />
+                <ScalarProperty Name="CliIBAN" ColumnName="CliIBAN" />
+                <ScalarProperty Name="CliLingua" ColumnName="CliLingua" />
+                <ScalarProperty Name="CliValuta" ColumnName="CliValuta" />
+                <ScalarProperty Name="CliNazione" ColumnName="CliNazione" />
+                <ScalarProperty Name="ClipostaNazione" ColumnName="ClipostaNazione" />
+                <ScalarProperty Name="CliSWIFT" ColumnName="CliSWIFT" />
+                <ScalarProperty Name="CliInUso" ColumnName="CliInUso" />
+                <ScalarProperty Name="Nomenclatura" ColumnName="Nomenclatura" />
+                <ScalarProperty Name="TarTruccatore" ColumnName="TarTruccatore" />
+                <ScalarProperty Name="TarParrucchiere" ColumnName="TarParrucchiere" />
+                <ScalarProperty Name="TarManicurista" ColumnName="TarManicurista" />
+                <ScalarProperty Name="TarGroomer" ColumnName="TarGroomer" />
+                <ScalarProperty Name="CliEMAIL" ColumnName="CliEMAIL" />
+                <ScalarProperty Name="GAAttenzione" ColumnName="GAAttenzione" />
+                <ScalarProperty Name="GACalcoloIVA" ColumnName="GACalcoloIVA" />
+                <ScalarProperty Name="GANote" ColumnName="GANote" />
+                <ScalarProperty Name="CliNumDicIntenti" ColumnName="CliNumDicIntenti" />
+                <ScalarProperty Name="CliDataDicIntenti" ColumnName="CliDataDicIntenti" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Documclienti">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Documclienti">
+              <MappingFragment StoreEntitySet="Documclienti">
+                <ScalarProperty Name="DCid" ColumnName="DCid" />
+                <ScalarProperty Name="DCnumero" ColumnName="DCnumero" />
+                <ScalarProperty Name="DCnumeroCompleto" ColumnName="DCnumeroCompleto" />
+                <ScalarProperty Name="DCanno" ColumnName="DCanno" />
+                <ScalarProperty Name="DCtipo" ColumnName="DCtipo" />
+                <ScalarProperty Name="DCdata" ColumnName="DCdata" />
+                <ScalarProperty Name="DCcliente" ColumnName="DCcliente" />
+                <ScalarProperty Name="DCimponibile" ColumnName="DCimponibile" />
+                <ScalarProperty Name="DCspese" ColumnName="DCspese" />
+                <ScalarProperty Name="DCdiritti" ColumnName="DCdiritti" />
+                <ScalarProperty Name="DCIVA" ColumnName="DCIVA" />
+                <ScalarProperty Name="DCtotale" ColumnName="DCtotale" />
+                <ScalarProperty Name="DCdescfat" ColumnName="DCdescfat" />
+                <ScalarProperty Name="DCdescspese" ColumnName="DCdescspese" />
+                <ScalarProperty Name="DCdatapag1" ColumnName="DCdatapag1" />
+                <ScalarProperty Name="DCdatapag2" ColumnName="DCdatapag2" />
+                <ScalarProperty Name="DCdatapag3" ColumnName="DCdatapag3" />
+                <ScalarProperty Name="DCpagato1" ColumnName="DCpagato1" />
+                <ScalarProperty Name="DCpagato2" ColumnName="DCpagato2" />
+                <ScalarProperty Name="DCpagato3" ColumnName="DCpagato3" />
+                <ScalarProperty Name="DCanticipi" ColumnName="DCanticipi" />
+                <ScalarProperty Name="DCdirittiop" ColumnName="DCdirittiop" />
+                <ScalarProperty Name="DCtrattenute" ColumnName="DCtrattenute" />
+                <ScalarProperty Name="DCBanca" ColumnName="DCBanca" />
+                <ScalarProperty Name="DCPiazza" ColumnName="DCPiazza" />
+                <ScalarProperty Name="DCpercIVA" ColumnName="DCpercIVA" />
+                <ScalarProperty Name="DCpercdiritti" ColumnName="DCpercdiritti" />
+                <ScalarProperty Name="DCpagam" ColumnName="DCpagam" />
+                <ScalarProperty Name="DCBancagreenapple" ColumnName="DCBancagreenapple" />
+                <ScalarProperty Name="DCbuonoOrdine" ColumnName="DCbuonoOrdine" />
+                <ScalarProperty Name="DCpostaRagSoc" ColumnName="DCpostaRagSoc" />
+                <ScalarProperty Name="DCpostaIndirizzo" ColumnName="DCpostaIndirizzo" />
+                <ScalarProperty Name="DCpostaLocalita" ColumnName="DCpostaLocalita" />
+                <ScalarProperty Name="DCpostaProv" ColumnName="DCpostaProv" />
+                <ScalarProperty Name="DCpostaCAP" ColumnName="DCpostaCAP" />
+                <ScalarProperty Name="DCnumeroPrestazione" ColumnName="DCnumeroPrestazione" />
+                <ScalarProperty Name="DCspese1" ColumnName="DCspese1" />
+                <ScalarProperty Name="DCdescspese1" ColumnName="DCdescspese1" />
+                <ScalarProperty Name="DCspese2" ColumnName="DCspese2" />
+                <ScalarProperty Name="DCdescspese2" ColumnName="DCdescspese2" />
+                <ScalarProperty Name="DCpostaNazione" ColumnName="DCpostaNazione" />
+                <ScalarProperty Name="DClingua" ColumnName="DClingua" />
+                <ScalarProperty Name="DCvaluta" ColumnName="DCvaluta" />
+                <ScalarProperty Name="DCSWIFT" ColumnName="DCSWIFT" />
+                <ScalarProperty Name="Nomenclatura" ColumnName="Nomenclatura" />
+                <ScalarProperty Name="DCPagata" ColumnName="DCPagata" />
+                <ScalarProperty Name="Cambio" ColumnName="Cambio" />
+                <ScalarProperty Name="DCSconto" ColumnName="DCSconto" />
+                <ScalarProperty Name="DCScontato" ColumnName="DCScontato" />
+                <ScalarProperty Name="DCnoteCliente" ColumnName="DCnoteCliente" />
+                <ScalarProperty Name="CliDataDicIntenti" ColumnName="CliDataDicIntenti" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Prestazioni">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Prestazioni">
+              <MappingFragment StoreEntitySet="Prestazioni">
+                <ScalarProperty Name="PRnumero" ColumnName="PRnumero" />
+                <ScalarProperty Name="PRdatainizio" ColumnName="PRdatainizio" />
+                <ScalarProperty Name="PRdatafine" ColumnName="PRdatafine" />
+                <ScalarProperty Name="PRcliente" ColumnName="PRcliente" />
+                <ScalarProperty Name="PRcategoria" ColumnName="PRcategoria" />
+                <ScalarProperty Name="PRtipodiritti" ColumnName="PRtipodiritti" />
+                <ScalarProperty Name="PRtotale" ColumnName="PRtotale" />
+                <ScalarProperty Name="PRdiritti" ColumnName="PRdiritti" />
+                <ScalarProperty Name="PRanticipi" ColumnName="PRanticipi" />
+                <ScalarProperty Name="PRtrattenute" ColumnName="PRtrattenute" />
+                <ScalarProperty Name="PRfattura" ColumnName="PRfattura" />
+                <ScalarProperty Name="PRfatturato" ColumnName="PRfatturato" />
+                <ScalarProperty Name="PRfatturare" ColumnName="PRfatturare" />
+                <ScalarProperty Name="PRdatafattura" ColumnName="PRdatafattura" />
+                <ScalarProperty Name="PRnumerogiorni" ColumnName="PRnumerogiorni" />
+                <ScalarProperty Name="PRutilizzo" ColumnName="PRutilizzo" />
+                <ScalarProperty Name="PRcitinfat" ColumnName="PRcitinfat" />
+                <ScalarProperty Name="PRspedirea" ColumnName="PRspedirea" />
+                <ScalarProperty Name="PRbuonoordine" ColumnName="PRbuonoordine" />
+                <ScalarProperty Name="PRspese" ColumnName="PRspese" />
+                <ScalarProperty Name="PRivaspese" ColumnName="PRivaspese" />
+                <ScalarProperty Name="PRrivalsa" ColumnName="PRrivalsa" />
+                <ScalarProperty Name="PRnote" ColumnName="PRnote" />
+                <ScalarProperty Name="PRcondpag" ColumnName="PRcondpag" />
+                <ScalarProperty Name="PRrivalsaSN" ColumnName="PRrivalsaSN" />
+                <ScalarProperty Name="PRIVASN" ColumnName="PRIVASN" />
+                <ScalarProperty Name="PRgiorni" ColumnName="PRgiorni" />
+                <ScalarProperty Name="PRtotalefattura" ColumnName="PRtotalefattura" />
+                <ScalarProperty Name="PRpagata" ColumnName="PRpagata" />
+                <ScalarProperty Name="PRchiave" ColumnName="PRchiave" />
+                <ScalarProperty Name="PRdescSpese" ColumnName="PRdescSpese" />
+                <ScalarProperty Name="PRspese1" ColumnName="PRspese1" />
+                <ScalarProperty Name="PRdescSpese1" ColumnName="PRdescSpese1" />
+                <ScalarProperty Name="PRspese2" ColumnName="PRspese2" />
+                <ScalarProperty Name="PRdescSpese2" ColumnName="PRdescSpese2" />
+                <ScalarProperty Name="PRmemo" ColumnName="PRmemo" />
+                <ScalarProperty Name="PRImponibile" ColumnName="PRImponibile" />
+                <ScalarProperty Name="PRpctIVA" ColumnName="PRpctIVA" />
+                <ScalarProperty Name="PRimportoIVA" ColumnName="PRimportoIVA" />
+                <ScalarProperty Name="PRannoDoc" ColumnName="PRannoDoc" />
+                <ScalarProperty Name="PRlingua" ColumnName="PRlingua" />
+                <ScalarProperty Name="PRvaluta" ColumnName="PRvaluta" />
+                <ScalarProperty Name="PRovertime" ColumnName="PRovertime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servizi">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Servizi">
+              <MappingFragment StoreEntitySet="Servizi">
+                <ScalarProperty Name="SRcodice" ColumnName="SRcodice" />
+                <ScalarProperty Name="SRoperatore" ColumnName="SRoperatore" />
+                <ScalarProperty Name="SRcliente" ColumnName="SRcliente" />
+                <ScalarProperty Name="SRcategoria" ColumnName="SRcategoria" />
+                <ScalarProperty Name="SRtiposervizio" ColumnName="SRtiposervizio" />
+                <ScalarProperty Name="SRimporto" ColumnName="SRimporto" />
+                <ScalarProperty Name="SRimponibile" ColumnName="SRimponibile" />
+                <ScalarProperty Name="SRdiritti" ColumnName="SRdiritti" />
+                <ScalarProperty Name="SRanticipi" ColumnName="SRanticipi" />
+                <ScalarProperty Name="SRtrattenute" ColumnName="SRtrattenute" />
+                <ScalarProperty Name="SRfatturacli" ColumnName="SRfatturacli" />
+                <ScalarProperty Name="SRfatturafor" ColumnName="SRfatturafor" />
+                <ScalarProperty Name="SRdatafatturacli" ColumnName="SRdatafatturacli" />
+                <ScalarProperty Name="SRdatafatturafor" ColumnName="SRdatafatturafor" />
+                <ScalarProperty Name="SRfatturare" ColumnName="SRfatturare" />
+                <ScalarProperty Name="SRfatturato" ColumnName="SRfatturato" />
+                <ScalarProperty Name="SRnumgiorni" ColumnName="SRnumgiorni" />
+                <ScalarProperty Name="SRnumeroprestazione" ColumnName="SRnumeroprestazione" />
+                <ScalarProperty Name="SRfatclianno" ColumnName="SRfatclianno" />
+                <ScalarProperty Name="SRanticipige" ColumnName="SRanticipige" />
+                <ScalarProperty Name="SRpagato" ColumnName="SRpagato" />
+                <ScalarProperty Name="SRdatainizio" ColumnName="SRdatainizio" />
+                <ScalarProperty Name="SRdatafine" ColumnName="SRdatafine" />
+                <ScalarProperty Name="SRimportoLordo" ColumnName="SRimportoLordo" />
+                <ScalarProperty Name="SRpctDiritti" ColumnName="SRpctDiritti" />
+                <ScalarProperty Name="SRdescSpese" ColumnName="SRdescSpese" />
+                <ScalarProperty Name="SRspese" ColumnName="SRspese" />
+                <ScalarProperty Name="SRspeseGA" ColumnName="SRspeseGA" />
+                <ScalarProperty Name="SRdescSpese1" ColumnName="SRdescSpese1" />
+                <ScalarProperty Name="SRspese1" ColumnName="SRspese1" />
+                <ScalarProperty Name="SRspeseGA1" ColumnName="SRspeseGA1" />
+                <ScalarProperty Name="SRdescSpese2" ColumnName="SRdescSpese2" />
+                <ScalarProperty Name="SRspese2" ColumnName="SRspese2" />
+                <ScalarProperty Name="SRspeseGA2" ColumnName="SRspeseGA2" />
+                <ScalarProperty Name="SRAnnoFatt" ColumnName="SRAnnoFatt" />
+                <ScalarProperty Name="SRMeseFatt" ColumnName="SRMeseFatt" />
+                <ScalarProperty Name="SResenzioneIvaArt15" ColumnName="SResenzioneIvaArt15" />
+                <ScalarProperty Name="SRpctRivPrev" ColumnName="SRpctRivPrev" />
+                <ScalarProperty Name="SRpctIVA" ColumnName="SRpctIVA" />
+                <ScalarProperty Name="SRpctRitAcc" ColumnName="SRpctRitAcc" />
+                <ScalarProperty Name="SRimportoRedazionale" ColumnName="SRimportoRedazionale" />
+                <ScalarProperty Name="SRimportoOvertime" ColumnName="SRimportoOvertime" />
+                <ScalarProperty Name="SRdescSpeseGA" ColumnName="SRdescSpeseGA" />
+                <ScalarProperty Name="SRdescSpeseGA1" ColumnName="SRdescSpeseGA1" />
+                <ScalarProperty Name="SRdescSpeseGA2" ColumnName="SRdescSpeseGA2" />
+                <ScalarProperty Name="SRimportoOvertimeGA" ColumnName="SRimportoOvertimeGA" />
+                <ScalarProperty Name="SRImportoGA" ColumnName="SRImportoGA" />
+                <ScalarProperty Name="SRCompensoAggiunto" ColumnName="SRCompensoAggiunto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lista_PrestazioniTipi">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Lista_PrestazioniTipi">
+              <MappingFragment StoreEntitySet="Lista_PrestazioniTipi">
+                <ScalarProperty Name="Posizione" ColumnName="Posizione" />
+                <ScalarProperty Name="Descrizione" ColumnName="Descrizione" />
+                <ScalarProperty Name="IdTipo" ColumnName="IdTipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lista_CategoriaServizi">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Lista_CategoriaServizi">
+              <MappingFragment StoreEntitySet="Lista_CategoriaServizi">
+                <ScalarProperty Name="FatturaRifferita" ColumnName="FatturaRifferita" />
+                <ScalarProperty Name="PercCompenso" ColumnName="PercCompenso" />
+                <ScalarProperty Name="Posizione" ColumnName="Posizione" />
+                <ScalarProperty Name="CSdescrizione" ColumnName="CSdescrizione" />
+                <ScalarProperty Name="CScodice" ColumnName="CScodice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lista_Tiposervizio">
+            <EntityTypeMapping TypeName="GREEN_SVILUPPOModel.Lista_Tiposervizio">
+              <MappingFragment StoreEntitySet="Lista_Tiposervizio">
+                <ScalarProperty Name="Posizione" ColumnName="Posizione" />
+                <ScalarProperty Name="CSdescrizione" ColumnName="CSdescrizione" />
+                <ScalarProperty Name="CScodice" ColumnName="CScodice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

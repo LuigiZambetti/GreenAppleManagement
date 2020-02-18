@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FattureElettroniche</RootNamespace>
+    <AssemblyName>FattureElettroniche</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\Clienti.cs" />
+    <Compile Include="DB\Documclienti.cs" />
+    <Compile Include="DB\Lista_CategoriaServizi.cs" />
+    <Compile Include="DB\Lista_PrestazioniTipi.cs" />
+    <Compile Include="DB\Lista_Tiposervizio.cs" />
+    <Compile Include="DB\Prestazioni.cs" />
+    <Compile Include="DB\Servizi.cs" />
+    <Compile Include="FatturaOrdinaria\FatturaOrdinaria.cs" />
+    <Compile Include="FatturaOrdinaria\FatturaOrdinariaBuilder.cs" />
+    <Compile Include="FatturaOrdinaria\FatturaOrdinariaDataProviderWithEntity.cs" />
+    <Compile Include="FatturaOrdinaria\FatturaOrdinariaDataProviderWithSqlCommandcs.cs" />
+    <Compile Include="FatturaOrdinaria\IFatturaDataProvider.cs" />
+    <Compile Include="FatturaOrdinaria\RigaFattura.cs" />
+    <Compile Include="FatturaSemplificata\FatturaSemplificata.cs" />
+    <Compile Include="FatturaSemplificata\FatturaSemplificataBuilderTest.cs" />
+    <Compile Include="FatturaSemplificata\FatturaSemplificataDataProviderWithEntity.cs" />
+    <Compile Include="FattureElettroniche.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utf8StringWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FatturaOrdinaria\FatturaOrdinaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FatturaSemplificata\FatturaSemplificata.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

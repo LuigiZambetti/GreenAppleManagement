@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GreenApple", "http://localhost:8943", "{EE5A057E-0390-467D-86C5-887F84266547}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		ProjectReferences = "{438fc1ee-f9c3-4b2f-8bae-e8e1e9e28f0e}|FattureElettroniche.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_8943"
+		Debug.AspNetCompiler.PhysicalPath = "GreenApple\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8943\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_8943"
+		Release.AspNetCompiler.PhysicalPath = "GreenApple\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8943\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "GreenApple\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FattureElettroniche", "FattureElettroniche\FattureElettroniche.csproj", "{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.0.206:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = http://localhost:8943
+		SccProjectName1 = GreenApple
+		SccLocalPath1 = GreenApple
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = FattureElettroniche\\FattureElettroniche.csproj
+		SccProjectName2 = FattureElettroniche
+		SccLocalPath2 = FattureElettroniche
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE5A057E-0390-467D-86C5-887F84266547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5A057E-0390-467D-86C5-887F84266547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5A057E-0390-467D-86C5-887F84266547}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5A057E-0390-467D-86C5-887F84266547}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438FC1EE-F9C3-4B2F-8BAE-E8E1E9E28F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

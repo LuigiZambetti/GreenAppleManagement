@@ -1,0 +1,9 @@
+
+20190305 11:52:48 ERROR
+20190305 11:52:48 Message: Errore durante l'elaborazione locale del report.
+20190305 11:52:48 StackTrace:    in Microsoft.Reporting.WebForms.LocalReport.EnsureExecutionSession()
+   in Microsoft.Reporting.WebForms.LocalReport.InternalRender(String format, Boolean allowInternalRenderers, String deviceInfo, PageCountMode pageCountMode, CreateAndRegisterStream createStreamCallback, Warning[]& warnings)
+   in Microsoft.Reporting.WebForms.LocalReport.InternalRender(String format, Boolean allowInternalRenderers, String deviceInfo, PageCountMode pageCountMode, String& mimeType, String& encoding, String& fileNameExtension, String[]& streams, Warning[]& warnings)
+   in Microsoft.Reporting.WebForms.LocalReport.Render(String format, String deviceInfo, PageCountMode pageCountMode, String& mimeType, String& encoding, String& fileNameExtension, String[]& streams, Warning[]& warnings)
+   in Microsoft.Reporting.WebForms.Report.Render(String format, String deviceInfo, String& mimeType, String& encoding, String& fileNameExtension, String[]& streams, Warning[]& warnings)
+   in Green.Apple.Management.Print.Page_Load(Object sender, EventArgs e) in d:\Marco\GreenApple\GreenApple\GreenApple\pages\Print.aspx.cs:riga 164

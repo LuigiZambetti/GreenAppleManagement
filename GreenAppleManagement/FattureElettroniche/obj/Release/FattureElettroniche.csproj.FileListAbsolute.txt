@@ -1,0 +1,5 @@
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\bin\Release\FattureElettroniche.dll
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\bin\Release\FattureElettroniche.pdb
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\obj\Release\FattureElettroniche.dll
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\obj\Release\FattureElettroniche.pdb
+D:\Marco\GreenApple\GreenApple\FattureElettroniche\obj\Release\FattureElettroniche.csprojResolveAssemblyReference.cache
